@@ -1,5 +1,5 @@
 ---
-title: "Portfoltio Self Esteem"
+title: "The Relationship Between Self-esteem and Music Preference"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -17,114 +17,213 @@ data_df <- read.csv('data.csv')
 
 ```
 
-Abstract {.sidebar}
-=====================================================
-
-Spotify results
+Main results
 ======================================================
+
+Abstract {.sidebar}
+-------------------------------------------------------
+
+```{r}
+
+```
 
 Big visualization{.tabset}
 --------------------------------------------------------
 
-### RSE and danceability
+### Danceability 
 
 ```{r}
 
 dancingscore <- ggplot(data_df, aes(x = data_df$dance, y = data_df$rse_score)) + 
   geom_point() +
-  ggtitle('Comparing danceability versus RSE score') +
+  ggtitle('Correlation with Self-esteem') +
   xlim(c(0,1)) +
   ylim(c(0,30)) + 
   ylab('RSE Score') +
   xlab('Danceability') +
-  theme_minimal()
+  theme_classic()
   
 ggplotly(dancingscore)
 
 ```
 
-### RSE and energylevel
+### Energy 
 
 ```{r}
 energyscore <- ggplot(data_df, aes(x = data_df$energy, y = data_df$rse_score)) + 
   geom_point() +
-  ggtitle('Comparing energylevel versus RSE score') +
+  ggtitle('Correlation with Self-esteem') +
   xlim(c(0,1)) +
   ylim(c(0,30)) + 
   ylab('RSE Score') +
   xlab('Energylevel') +
-  theme_minimal()
+  theme_classic()
   
 ggplotly(energyscore)
 
 ```
 
-### RSE and valence
+### Valence 
 
 ```{r}
 valencescore <- ggplot(data_df, aes(x = data_df$valence, y = data_df$rse_score)) + 
   geom_point() +
-  ggtitle('Comparing valence versus RSE score') +
+  ggtitle('Correlation with Self-esteem') +
   ylab('RSE Score') +
   xlim(c(0,1)) +
   ylim(c(0,30)) + 
   xlab('Valence') +
-  theme_minimal()
+  theme_classic()
   
 ggplotly(valencescore)
 
 ```
 
-### RSE and mode
+### Mode 
 
 ```{r}
 modescore <- ggplot(data_df, aes(x = data_df$mode, y = data_df$rse_score)) + 
   geom_point() +
-  ggtitle('Comparing mode versus RSE score') +
+  ggtitle('Correlation with Self-esteem') +
   xlim(c(0,1)) +
   ylim(c(0,30)) + 
   ylab('RSE Score') +
   xlab('Mode') +
-  theme_minimal()
+  theme_classic()
   
 ggplotly(modescore)
 
 ```
 
-Demographic results
-========================================================
-
-Column
----------------------------------------------------------
-
-### Visualization
-
-```{r}
-
-
-```
-
-Background{data-navmenu="Research"}
-========================================================
-
 Column
 -------------------------------------------------------
 
-### Chart A
+### Correlation graph?
 
 ```{r}
 
 ```
 
-References{data-navmenu="Research"}
+### Something
+```{r}
+
+
+
+```
+
+Additional Findings 
+========================================================
+
+Column {.tabset}
+---------------------------------------------------------
+
+### Demographics
+
+```{r}
+
+
+```
+
+### Musical sophistication correlated with Self-esteem
+
+```{r}
+msiscore <- ggplot(data_df, aes(x = data_df$msi_score, y = data_df$rse_score)) + 
+  geom_point() +
+  ggtitle('Correlation with Self-esteem') +
+  xlim(c(20,100)) +
+  ylim(c(0,30)) + 
+  ylab('RSE score') +
+  xlab('MSI score') +
+  theme_classic()
+  
+ggplotly(msiscore)
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Information
+
+```{r}
+
+```
+
+Background{data-navmenu="Details"}
+========================================================
+
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### Theory
+
+```{r}
+
+```
+
+### Relevant Article Review 1
+
+```{r}
+
+```
+
+Column {data-width=300}
+-----------------------------------------------------------------------
+
+### Hypotheses
+
+```{r}
+
+```
+
+### Methodology
+
+```{r}
+
+```
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Statistical Findings
+
+```{r}
+
+```
+
+Discussion{data-navmenu="Details"}
 =========================================================
 
 Column
--------------------------------------------------------
+-----------------------------------------------------------------------
 
-### Chart B
+### Conclusion
 
 ```{r}
 
 ```
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Limitations
+
+```{r}
+
+```
+
+### Future Research
+
+```{r}
+
+```
+
+Bibliography {data-navmenu="Details"}
+=======================================================================
+
+### Clickable list of references
+
+```{r}
+
+``` 
 
