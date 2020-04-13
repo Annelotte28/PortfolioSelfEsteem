@@ -174,7 +174,7 @@ Column {.tabset}
 
 ```
 
-Column {data-width=300}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Hypotheses
@@ -183,20 +183,28 @@ Column {data-width=300}
 
 ```
 
-### Methodology
+### Statistical findings
 
 ```{r}
 
 ```
 
-Column {data-width=400}
+
+Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Statistical Findings
+### Methods
 
 ```{r}
 
 ```
+
+Participants:
+The participants were 42 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 11 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to a Spotify “Your Top Songs 2019” playlist. The sample was composed of 20 females and 19 males with a mean age of 25 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+
+Procedures:
+The online questionnaire “Does music define your self?” was shared via social media. Those who got the link to the questionnaire and decided to fill it in, had to follow instructions and answer a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist, as their most listened to songs may reveal something about their self-esteem. They proceeded by answering social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Next, they answered the Gold MSI sophistication test and finally the Rosenberg self-esteem questionnaire.
+Aach participant got a musical sophistication index and a self-esteem score, based on their results of the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Using the Spotify API, we found the values of the audio features of each song in their playlist and calculated the average values for each feature per participant. Finally, we correlated these values and the musical sophistication index to the person’s self-esteem score.
 
 Discussion{data-navmenu="Details"}
 =========================================================
