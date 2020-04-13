@@ -99,22 +99,6 @@ ggplotly(modescore)
 
 ```
 
-Column {data-width = 250}
--------------------------------------------------------
-
-### Correlation graph?
-
-```{r}
-
-```
-
-### Number of participants
-```{r}
-
-valueBox(count(data_df), icon = 'fa-pencil')
-
-```
-
 Additional Findings 
 ========================================================
 
@@ -150,11 +134,19 @@ ggplotly(msiscore)
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Information
+### Correlation between spotify features
 
 ```{r}
 
 ```
+
+### Number of participants
+```{r}
+
+valueBox(count(data_df), icon = 'fa-pencil')
+
+```
+
 
 Background{data-navmenu="Details"}
 ========================================================
@@ -182,6 +174,9 @@ Column {data-width=350}
 ```{r}
 
 ```
+
+There is a positive relationship between self-esteem and uplifting music. 
+
 
 ### Statistical findings
 
