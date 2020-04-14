@@ -12,6 +12,7 @@ library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(DT)
+library(ggcorrplot)
 
 data_df <- read.csv('data.csv')
 
@@ -97,6 +98,16 @@ modescore <- ggplot(data_df, aes(x = data_df$mode, y = data_df$rse_score)) +
   
 ggplotly(modescore)
 
+```
+
+### All correlations
+
+```{r}
+dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation)
+corr <- round(cor(dataslice), 1)
+p.mat <- cor_pmat(dataslice)
+ggcorrplot(corr, hc.order = TRUE,
+    type = "lower", p.mat = p.mat)
 ```
 
 Additional Findings 
