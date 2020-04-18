@@ -12,6 +12,7 @@ library(flexdashboard)
 library(tidyverse)
 library(plotly)
 library(DT)
+library(dplyr)
 
 data_df <- read.csv('data.csv')
 
@@ -33,6 +34,14 @@ In this study, we measured if there was a correlation between self-esteem and ev
 
 Big visualization{.tabset}
 --------------------------------------------------------
+
+### Spotify features
+```{r}
+
+ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score) %>% pivot_longer(c(valence, energy, mode, dance), names_to = 'spotify', values_to = 'value') %>% ggplot(aes(x = value, y = rse_score)) + geom_point() + geom_smooth() + facet_wrap(~ spotify) )
+
+
+```
 
 ### Danceability 
 
@@ -109,9 +118,9 @@ Column {.tabset}
 
 ```{r}
 
-histo <- ggplot(data = data_df, aes(x = data_df$rse_score, fill = data_df$demographics.gender)) + geom_histogram(binwidth = 1) + theme_classic() + xlab('RSE Score') + ggtitle('Histogram RSE scores') + theme(legend.title = element_blank())
+genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + theme_classic() + xlab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank())
   
-ggplotly(histo)
+ggplotly(genderplot)
 
 ```
 
@@ -120,6 +129,7 @@ ggplotly(histo)
 ```{r}
 msiscore <- ggplot(data_df, aes(x = data_df$msi_score, y = data_df$rse_score)) + 
   geom_point() +
+  geom_smooth() +
   ggtitle('Correlation with Self-esteem') +
   xlim(c(20,100)) +
   ylim(c(0,30)) + 
