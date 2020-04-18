@@ -14,6 +14,9 @@ library(tidyverse)
 library(plotly)
 library(DT)
 library(ggcorrplot)
+library(ggthemes)
+
+theme_set(theme_igray())
 
 data_df <- read.csv('data.csv')
 
@@ -41,8 +44,7 @@ Big visualization{.tabset}
 
 ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score) %>% pivot_longer(c(valence, energy, mode, dance), names_to = 'spotify', values_to = 'value') %>% ggplot(aes(x = value, y = rse_score)) + geom_point() + geom_smooth() + facet_wrap(~ spotify) + xlim(c(0,1)) +
   ylim(c(0,30)) + 
-  ylab('RSE Score') +
-  theme_minimal() )
+  ylab('RSE Score') )
 
 
 ```
@@ -133,7 +135,7 @@ Column {.tabset}
 
 ```{r}
 
-genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + theme_classic() + xlab('Age') + ylab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank())
+genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + xlab('Age') + ylab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank())
   
 ggplotly(genderplot)
 
@@ -149,8 +151,7 @@ msiscore <- ggplot(data_df, aes(x = data_df$msi_score, y = data_df$rse_score)) +
   xlim(c(20,100)) +
   ylim(c(0,30)) + 
   ylab('RSE score') +
-  xlab('MSI score') +
-  theme_classic()
+  xlab('MSI score')
   
 ggplotly(msiscore)
 
