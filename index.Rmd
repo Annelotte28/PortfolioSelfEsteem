@@ -9,10 +9,11 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(dplyr)
 library(tidyverse)
 library(plotly)
 library(DT)
-library(dplyr)
+library(ggcorrplot)
 
 data_df <- read.csv('data.csv')
 
@@ -38,74 +39,88 @@ Big visualization{.tabset}
 ### Spotify features
 ```{r}
 
-ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score) %>% pivot_longer(c(valence, energy, mode, dance), names_to = 'spotify', values_to = 'value') %>% ggplot(aes(x = value, y = rse_score)) + geom_point() + geom_smooth() + facet_wrap(~ spotify) )
+ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score) %>% pivot_longer(c(valence, energy, mode, dance), names_to = 'spotify', values_to = 'value') %>% ggplot(aes(x = value, y = rse_score)) + geom_point() + geom_smooth() + facet_wrap(~ spotify) + xlim(c(0,1)) +
+  ylim(c(0,30)) + 
+  ylab('RSE Score') +
+  theme_minimal() )
 
 
 ```
 
-### Danceability 
+<!-- ### Danceability  -->
+
+<!-- ```{r} -->
+
+<!-- dancingscore <- ggplot(data_df, aes(x = data_df$dance, y = data_df$rse_score)) +  -->
+<!--   geom_point() + -->
+<!--   ggtitle('Correlation with Self-esteem') + -->
+<!--   xlim(c(0,1)) + -->
+<!--   ylim(c(0,30)) +  -->
+<!--   ylab('RSE Score') + -->
+<!--   xlab('Danceability') + -->
+<!--   theme_classic() -->
+
+<!-- ggplotly(dancingscore) -->
+
+<!-- ``` -->
+
+<!-- ### Energy  -->
+
+<!-- ```{r} -->
+<!-- energyscore <- ggplot(data_df, aes(x = data_df$energy, y = data_df$rse_score)) +  -->
+<!--   geom_point() + -->
+<!--   ggtitle('Correlation with Self-esteem') + -->
+<!--   xlim(c(0,1)) + -->
+<!--   ylim(c(0,30)) +  -->
+<!--   ylab('RSE Score') + -->
+<!--   xlab('Energylevel') + -->
+<!--   theme_classic() -->
+
+<!-- ggplotly(energyscore) -->
+
+<!-- ``` -->
+
+<!-- ### Valence  -->
+
+<!-- ```{r} -->
+<!-- valencescore <- ggplot(data_df, aes(x = data_df$valence, y = data_df$rse_score)) +  -->
+<!--   geom_point() + -->
+<!--   ggtitle('Correlation with Self-esteem') + -->
+<!--   ylab('RSE Score') + -->
+<!--   xlim(c(0,1)) + -->
+<!--   ylim(c(0,30)) +  -->
+<!--   xlab('Valence') + -->
+<!--   theme_classic() -->
+
+<!-- ggplotly(valencescore) -->
+
+<!-- ``` -->
+
+<!-- ### Mode  -->
+
+<!-- ```{r} -->
+<!-- modescore <- ggplot(data_df, aes(x = data_df$mode, y = data_df$rse_score)) +  -->
+<!--   geom_point() + -->
+<!--   ggtitle('Correlation with Self-esteem') + -->
+<!--   xlim(c(0,1)) + -->
+<!--   ylim(c(0,30)) +  -->
+<!--   ylab('RSE Score') + -->
+<!--   xlab('Mode') + -->
+<!--   theme_classic() -->
+
+<!-- ggplotly(modescore) -->
+
+<!-- ``` -->
+
+### All correlations
 
 ```{r}
-
-dancingscore <- ggplot(data_df, aes(x = data_df$dance, y = data_df$rse_score)) + 
-  geom_point() +
-  ggtitle('Correlation with Self-esteem') +
-  xlim(c(0,1)) +
-  ylim(c(0,30)) + 
-  ylab('RSE Score') +
-  xlab('Danceability') +
-  theme_classic()
-  
-ggplotly(dancingscore)
-
-```
-
-### Energy 
-
-```{r}
-energyscore <- ggplot(data_df, aes(x = data_df$energy, y = data_df$rse_score)) + 
-  geom_point() +
-  ggtitle('Correlation with Self-esteem') +
-  xlim(c(0,1)) +
-  ylim(c(0,30)) + 
-  ylab('RSE Score') +
-  xlab('Energylevel') +
-  theme_classic()
-  
-ggplotly(energyscore)
-
-```
-
-### Valence 
-
-```{r}
-valencescore <- ggplot(data_df, aes(x = data_df$valence, y = data_df$rse_score)) + 
-  geom_point() +
-  ggtitle('Correlation with Self-esteem') +
-  ylab('RSE Score') +
-  xlim(c(0,1)) +
-  ylim(c(0,30)) + 
-  xlab('Valence') +
-  theme_classic()
-  
-ggplotly(valencescore)
-
-```
-
-### Mode 
-
-```{r}
-modescore <- ggplot(data_df, aes(x = data_df$mode, y = data_df$rse_score)) + 
-  geom_point() +
-  ggtitle('Correlation with Self-esteem') +
-  xlim(c(0,1)) +
-  ylim(c(0,30)) + 
-  ylab('RSE Score') +
-  xlab('Mode') +
-  theme_classic()
-  
-ggplotly(modescore)
-
+dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation)
+corr <- round(cor(dataslice), 1)
+p.mat <- cor_pmat(dataslice)
+corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
+    type = "lower", p.mat = p.mat)
+corrplotspotify
 ```
 
 Additional Findings 
@@ -118,7 +133,7 @@ Column {.tabset}
 
 ```{r}
 
-genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + theme_classic() + xlab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank())
+genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + theme_classic() + xlab('Age') + ylab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank())
   
 ggplotly(genderplot)
 
