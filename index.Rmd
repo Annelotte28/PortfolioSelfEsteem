@@ -128,6 +128,17 @@ corrplotspotify
 Additional Findings 
 ========================================================
 
+Abstract {.sidebar}
+-------------------------------------------------------
+
+People who suffer from mental health issues, such as depression, tend to have low self-esteem based on previous studies. Studies have found that music and music-therapy improve self-esteem. However, all of these experiments have been conducted in a controlled environment and none in the context of everyday music. Most people experience variations in self-esteem in the cause of their life, especially during their teenage years. Therefore, it would be useful if the finding that music-therapy improves self-esteem is extended to include everyday music.
+
+In this study, we measured if there was a correlation between self-esteem and everyday music. The purpose of this study is to present a systematic review of the data we have collected concerning our clinical question. We have conducted our experiment utilizing an online questionnaire, using the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Additionally, the participants were asked to give their “Top Songs 2019” playlist on Spotify. We have found that there is a positive relationship between self-esteem and uplifting music.
+
+```{r}
+
+```
+
 Column {.tabset}
 ---------------------------------------------------------
 
