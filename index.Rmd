@@ -193,6 +193,13 @@ Column {.tabset}
 
 ### Theory
 
+Most people seem to have experienced how our music and self-esteem go hand in hand. However, the relation between the two may differ per person, making the research of music and self-esteem an interesting topic. With this research, we want to find out the influences of music and self-esteem on each other.
+Previous studies have shown that music therapy improves self-esteem in people. An example of such a study is the scientific article Use of Music Therapy for Enhancing Self-esteem among Academically Stressed Adolescents  written by Mamta Sharma and Tanmeet Jagdev from Punjabi University.
+The experiment conducted in this study consisted of 30 students who have high academic stress and low self-esteem split into two groups. One group was selected for music therapy while the other group was the control group. The participants’ stress level and self-esteem was measured using the Scale of Academic Stress and the Self Esteem Inventory. The experimental group was instructed to listen and enjoy a 30-minute flute recording of raga, a melodic mode used in Indian classical music, daily for 15 days. Results show that the experimental group had a higher self-esteem than the control group. The difference between the two groups was statistically significant, proving that music therapy improves self-esteem.
+In the article Music listening as self-enhancement: Effects of empowering music on momentary explicit and implicit self-esteem by Paul Elvers, Timo Fischger and Jochen Steffens, they make a distinction between momentary explicit self-esteem and implicit self-esteem. In both cases, they seem to be affected by music listening but in different ways. Explicit self-esteem changed positively because of liking while implicit self-esteem changed positively because of empathy and negatively because of nostalgia.
+Interestingly, all these experiments have been done in a controlled environment, in which the experimenters told the participants to listen to specific songs, but none have studied self-esteem in the context of everyday music listening, in which we have control over what we listen to. With this research, we want to see whether everyday music can cause similar effects as music therapy. If that is the case, then this may be an accessible solution to help those suffering from low self-esteem. As there is currently no research regarding this particular topic, our research as an exploratory one that could potentially form a basis for future research into everyday music and self-esteem.
+
+
 ```{r}
 
 ```
@@ -271,6 +278,11 @@ Bibliography {data-navmenu="Details"}
 =======================================================================
 
 ### Clickable list of references
+
+Elvers, P., Fischinger, T., & Steffens, J. (2018). Music listening as self-enhancement: Effects of empowering music on momentary explicit and implicit self-esteem. Psychology of Music, 46(3), 307-325
+
+Sharma, M., & Jagdev, T. (2011). Use of music therapy for enhancing self-esteem among academically stressed adolescents. Pakistan Journal of Psychological Research, 27(1), pp-53
+
 
 ```{r}
 
