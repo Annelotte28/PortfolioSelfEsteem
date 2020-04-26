@@ -28,9 +28,9 @@ Spotify results
 Abstract {.sidebar}
 -------------------------------------------------------
 
-People who suffer from mental health issues, such as depression, tend to have low self-esteem based on previous studies. Studies have found that music and music-therapy improve self-esteem. However, all of these experiments have been conducted in a controlled environment and none in the context of everyday music. Most people experience variations in self-esteem in the cause of their life, especially during their teenage years. Therefore, it would be useful if the finding that music-therapy improves self-esteem is extended to include everyday music.
+People who suffer from mental health issues, such as depression, tend to have low self-esteem based on previous studies. Studies have found that music and music-therapy improve self-esteem. However, all of these experiments have been conducted in a controlled environment and none in the context of everyday music. Most people experience variations in self-esteem in the course of their life, especially during their teenage years. Therefore, it would be useful if the finding that music-therapy improves self-esteem is extended to include everyday music.
 
-In this study, we measured if there was a correlation between self-esteem and everyday music. The purpose of this study is to present a systematic review of the data we have collected concerning our clinical question. We have conducted our experiment utilizing an online questionnaire, using the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Additionally, the participants were asked to give their “Top Songs 2019” playlist on Spotify. We have found that there is a positive relationship between self-esteem and uplifting music.
+In this study, we measured if there was a correlation between self-esteem and everyday music. The purpose of this study is to conduct an exploratory research to see if the medicalised results between self-esteem and music can be extended to everyday life. We have conducted our experiment utilizing an online survey, using the Gold MSI questionnaire and the Rosenberg self-esteem questionnaire. Additionally, the participants were asked to give their “Your Top Songs 2019” playlist on Spotify. We have found that there is a positive relationship between self-esteem and uplifting music.
 
 ```{r}
 
@@ -141,11 +141,18 @@ Column {data-width=250}
 
 ### Hypotheses
 
-```{r}
+**Main hypothesis**
 
-```
+There is a positive relationship between self-esteem and uplifting music.
 
-There is a positive relationship between self-esteem and uplifting music. 
+**Sub-hypotheses**
+
+1.	There is a positive relationship between self-esteem and valence.
+2.	There is a positive relationship between self-esteem and energy
+3.	There is a positive relationship between self-esteem and danceability
+4.	There is a positive relationship between self-esteem and mode
+5.	Claims for the other features?
+
 
 ### Statistical findings
 
@@ -158,15 +165,12 @@ Column {data-width=400 .tabset}
 
 ### Theory
 
-Most people seem to have experienced how our music and self-esteem go hand in hand. However, the relation between the two may differ per person, making the research of music and self-esteem an interesting topic. With this research, we want to find out the influences of music and self-esteem on each other.
+In this modern world, music has become increasingly accessible and individualised (Skånland, 2013), through inventions such as the MP3 and applications like Spotify. Individuals are now able to easily tune in to their desired song or create their own playlists of songs. In comparison to the past where people heavily relied on shared music outlets like the radio. Naturally, one could request for their desired music by calling the radio hotline, but they would have to wait for their queued song, and they would need to have access to a radio. This brings us to the question of how frequent exposure to personalised music could impact individuals. 
 
-Previous studies have shown that music therapy improves self-esteem in people. An example of such a study is the scientific article Use of Music Therapy for Enhancing Self-esteem among Academically Stressed Adolescents  written by Mamta Sharma and Tanmeet Jagdev from Punjabi University.
+Based on previous research, we found that music can improve people’s self-esteem. One example is the study by Sharma and Jagdev (2011). The research consisted of 30 students with high academic stress and low self-esteem. They were split into two groups whereby one was selected for music therapy and the other was the control group. The participants’ stress level and self-esteem were measured using the Scale of Academic Stress and the Self Esteem Inventory. The music therapy group was instructed to listen to a 30-minute flute recording of raga, a melodic mode used in Indian classical music, daily for 15 days. The results showed that the music therapy group had higher self-esteem than the control group, which was statistically significant. This supports the idea that music therapy improves self-esteem.
 
-The experiment conducted in this study consisted of 30 students who have high academic stress and low self-esteem split into two groups. One group was selected for music therapy while the other group was the control group. The participants’ stress level and self-esteem was measured using the Scale of Academic Stress and the Self Esteem Inventory. The experimental group was instructed to listen and enjoy a 30-minute flute recording of raga, a melodic mode used in Indian classical music, daily for 15 days. Results show that the experimental group had a higher self-esteem than the control group. The difference between the two groups was statistically significant, proving that music therapy improves self-esteem.
-
-In the article Music listening as self-enhancement: Effects of empowering music on momentary explicit and implicit self-esteem by Paul Elvers, Timo Fischger and Jochen Steffens, they make a distinction between momentary explicit self-esteem and implicit self-esteem. In both cases, they seem to be affected by music listening but in different ways. Explicit self-esteem changed positively because of liking while implicit self-esteem changed positively because of empathy and negatively because of nostalgia.
-
-Interestingly, all these experiments have been done in a controlled environment, in which the experimenters told the participants to listen to specific songs, but none have studied self-esteem in the context of everyday music listening, in which we have control over what we listen to. With this research, we want to see whether everyday music can cause similar effects as music therapy. If that is the case, then this may be an accessible solution to help those suffering from low self-esteem. As there is currently no research regarding this particular topic, our research as an exploratory one that could potentially form a basis for future research into everyday music and self-esteem.
+Another research found that people who suffer from mental health issues, such as depression, tend to have low self-esteem and that music therapy was effective in improve improving their self-esteem (Hanser, & Thompson, 1994). All the research we have found with regards to music and self-esteem have been conducted in controlled environments, whereby the researchers determined the songs the participants listened to. We would like to see if the relationship between music therapy and self-esteem could also be extended to everyday music, whereby people have full control over their song selection. As there is currently no research regarding this topic, our research is an exploratory one that could potentially form a basis for future research into everyday music and self-esteem. If there is a correlation between everyday music and self-esteem, further research could be conducted to test if everyday music is a viable, easily accessible alternative to music therapy, for those suffering from low self-esteem. 
+It could be that one’s self-esteem influences the nature of the music one listens to, through influencing one’s emotional state. According to the study by Heimpel, Wood, Marshall, and Brown (2002), individuals with higher self-esteem are more likely to improve their negative mood. In addition, another study found that people tend to (consciously or unconsciously) choose music that matches their current state mood (Skånland, 2013). Furthermore, a study by Schubert (2007) found that experiencing positive emotions led to a preference for music with a positive valence. As such, it is plausible that, as compared to people with lower self-esteem, those with high self-esteem experience positive moods more often and as a result, listen to music with positive undertones more often. 
 
 
 ```{r}
@@ -181,12 +185,19 @@ Interestingly, all these experiments have been done in a controlled environment,
 
 **Participants**
 
-The participants were 55 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to a Spotify “Your Top Songs 2019” playlist. The sample was composed of 21 females and 21 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+The participants were 57 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to a Spotify “Your Top Songs 2019” playlist. The sample was composed of 21 females and 21 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+
+**Materials**
+
+The two questionnaires we used are discussed below:
+The Rosenberg Self-Esteem Scale (Rosenberg, 1965) is a reliable measurement of one’s self-esteem (α = 0.88) (Robins, Hendin, & Trzesniewski, 2001). The questionnaire consists of 10 items, rated on a four-point Likert scale from one to four. The ratings were strongly disagree, disagree, agree and strongly agree. The lowest possible score is four and the highest is 40. The higher the score, the higher one’s level of self-esteem. An example of a test item is “I feel I do not have much to be proud of”. 
+
+The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart, & Musil, 2013) consists of six dimensions. For our research, we opted to use only the General Musical Sophistication subscale which is a reliable (α = 0.93) measurement of one’s musical abilities and achievements. The subscale questionnaire consists of 18 items, rated on a seven-point Likert scale from one to seven. The ratings were completely disagree, strongly disagree, disagree, neither agree nor disagree, agree, strongly agree, and completely agree. The lowest possible score is 18 and the highest is 126. The higher the score, the higher one’s level of musical sophistication. An example of a test item is “I enjoy writing about music, for example on blogs and forums.”. 
 
 **Procedures**
 
-The online questionnaire “Does music define your self?” was shared via social media. Those who got the link to the questionnaire and decided to fill it in, had to follow instructions and answer a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist, as their most listened to songs may reveal something about their self-esteem. They proceeded by answering social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Next, they answered the Gold MSI sophistication test and finally the Rosenberg self-esteem questionnaire.
-Aach participant got a musical sophistication index and a self-esteem score, based on their results of the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Using the Spotify API, we found the values of the audio features of each song in their playlist and calculated the average values for each feature per participant. Finally, we correlated these values and the musical sophistication index to the person’s self-esteem score.
+The online survey “Does music define your self?” was shared via social media. Those who filled in the survey received instructions and answered a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist. They then answered social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Following that, they answered the Gold MSI test and finally the Rosenberg self-esteem questionnaire. This is the [link](https://pepijn.shinyapps.io/survey/) to our survey.
+Based on the Spotify API features, we used R studio to calculate the average value of each feature for each person’s playlist. The values of these features were then correlated with the self-esteem scores.
 
 
 Column {data-width=350}
@@ -267,9 +278,24 @@ Column {data-width=350}
 
 ### Limitations
 
-```{r}
+There are a few limitations to our research:
 
-```
+**Retrospective aspect**
+
+The playlists are based on the songs someone listened to in 2019, while our research is being conducted in present time of early 2020. It could be that one’s self-esteem has changed since the time they listened to those songs. Even though the stability of one’s self-esteem gradually increases during one’s adolescence and early adulthood, self-esteem still varies across time (Trzesniewski, Donnellan, & Robins, 2003). As such, the instability in one’s self-esteem could decrease the accuracy of our findings as the participants’ self-esteem corresponding to their 2019 playlist could differ from their self-esteem in 2020. 
+
+**Correlation is not causation**
+
+As much as we would like to conduct an experimental research, it is quite a challenge with our limited resources (such as time and a lack of compensation for the participants). Ideally, we would liked to have conducted an experiment using the daily sampling method, whereby participants would be asked to complete a survey everyday regarding their mood, self-esteem and music listened to. However, that would require a lot of commitment from our participants and we lacked the appropriate incentives. As a result, we can only make correlational conclusions. 
+
+**Participant’s state**
+
+Another factor that could have resulted in accurate results is the state of the participants while they were completing the survey. A personal life event may have affected the person’s perception of their self-esteem. For instance, receiving bad grades could have lowered the participant’s belief in their abilities and may have temporarily lowered their self-esteem. A way to avoid this limitation, if we had more resources, would be to conduct the survey a few times, on different days, and take the average scores for the questionnaires.
+
+**Spotify users only**
+
+Due to the requirements of the course and the ease of collating the data, we targeted people who used Spotify regularly. As such, the data collected is probably not representative of the general population, since there may be some systematic differences between Spotify users and non-Spotify users. 
+
 
 ### Future Research
 
@@ -282,10 +308,24 @@ Column {data-width=300 .tabset}
 
 ### Clickable bibliography
 
-Elvers, P., Fischinger, T., & Steffens, J. (2018). Music listening as self-enhancement: Effects of empowering music on momentary explicit and implicit self-esteem. Psychology of Music, 46(3), 307-325
+Hanser, S. B., & Thompson, L. W. (1994). Effects of a music therapy strategy on depressed older adults. Journal of gerontology, 49(6), 265-269.
 
-Sharma, M., & Jagdev, T. (2011). Use of music therapy for enhancing self-esteem among academically stressed adolescents. Pakistan Journal of Psychological Research, 27(1), pp-53
+Heimpel, S. A., Wood, J. V., Marshall, M. A., & Brown, J. D. (2002). Do people with low self-esteem really want to feel better? Self-esteem differences in motivation to repair negative moods. Journal of personality and social psychology, 82(1), 128.
 
+Müllensiefen, D., Gingras, B., Stewart, L., & Musil, J. J. (2013). Goldsmiths Musical Sophistication Index (Gold-MSI) v1. 0: Technical Report and Documentation Revision 0.3. London: Goldsmiths, University of London.
+
+Robins, R. W., Hendin, H. M., & Trzesniewski, K. H. (2001). Measuring global self-esteem: Construct validation of a single-item measure and the Rosenberg Self-Esteem Scale. Personality and social psychology bulletin, 27(2), 151-161.
+
+Rosenberg, M. (2015). Society and the adolescent self-image. Princeton, NJ: Princeton university press. 
+
+Schubert, E. (2007). The influence of emotion, locus of emotion and familiarity upon preference in music. Psychology of Music, 35(3), 499-515.
+Sharma, M., & Jagdev, T. (2011). Use of music therapy for enhancing self-esteem among academically stressed adolescents. Pakistan Journal of Psychological Research, 27(1), 53.
+
+Skånland, M. S. (2013). Everyday music listening and affect regulation: The role of MP3 players. International journal of qualitative studies on health and well-being, 8(1), 20595. 
+
+Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). Stability of self-esteem across the life span. Journal of personality and social psychology, 84(1), 205.
+
+Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). Self-esteem: a self-social construct. Journal of Consulting and Clinical Psychology, 33(1), 84.
 
 ### Article review 1
 
