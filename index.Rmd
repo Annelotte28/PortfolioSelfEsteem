@@ -22,7 +22,7 @@ data_df <- read.csv('data.csv')
 
 ```
 
-Main results
+Spotify results
 ======================================================
 
 Abstract {.sidebar}
@@ -45,7 +45,7 @@ Big visualization{.tabset}
 fig <- ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score, msi_score) %>% pivot_longer(c(valence, energy, mode, dance), names_to = 'spotify', values_to = 'value') 
           %>% ggplot(aes(x = rse_score, y = value, color = msi_score)) 
           + geom_point() 
-          + scale_color_gradient(name = "Msi_scores", 
+          + scale_color_gradient(name = "MSI-scores", 
                         low = "blue", high = "red") 
           + geom_smooth() 
           + facet_wrap(~ spotify) 
@@ -133,71 +133,27 @@ corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
 corrplotspotify
 ```
 
-Additional Findings 
+Background 
 ========================================================
 
-Abstract {.sidebar}
--------------------------------------------------------
-
-People who suffer from mental health issues, such as depression, tend to have low self-esteem based on previous studies. Studies have found that music and music-therapy improve self-esteem. However, all of these experiments have been conducted in a controlled environment and none in the context of everyday music. Most people experience variations in self-esteem in the cause of their life, especially during their teenage years. Therefore, it would be useful if the finding that music-therapy improves self-esteem is extended to include everyday music.
-
-In this study, we measured if there was a correlation between self-esteem and everyday music. The purpose of this study is to present a systematic review of the data we have collected concerning our clinical question. We have conducted our experiment utilizing an online questionnaire, using the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Additionally, the participants were asked to give their “Top Songs 2019” playlist on Spotify. We have found that there is a positive relationship between self-esteem and uplifting music.
-
-```{r}
-
-```
-
-Column
----------------------------------------------------------
-
-<!-- ### Demographics -->
-
-<!-- ```{r} -->
-
-<!-- genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + xlab('Age') + ylab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank()) -->
-
-<!-- ggplotly(genderplot) -->
-
-<!-- ``` -->
-
-### Musical sophistication correlated with Self-esteem
-
-```{r}
-msiscore <- ggplot(data_df, aes(x = rse_score, y = msi_score, col = demographics.gender)) + 
-  geom_point() +
-  geom_smooth(aes(group = 1)) +
-  ggtitle('Correlation with Self-esteem') +
-  labs(color = 'Gender') +
-  xlim(c(0,30)) +
-  ylim(c(20,100)) + 
-  ylab('MSI score ') +
-  xlab('RSE score')
-  
-ggplotly(msiscore)
-
-```
-
-Column {data-width=350}
+Column {data-width=250}
 -----------------------------------------------------------------------
 
-### Correlation between spotify features
+### Hypotheses
 
 ```{r}
 
 ```
 
-### Number of participants
-```{r}
+There is a positive relationship between self-esteem and uplifting music. 
 
-valueBox(count(data_df), icon = 'fa-pencil')
+### Statistical findings
+
+```{r}
 
 ```
 
-
-Background{data-navmenu="Details"}
-========================================================
-
-Column {.tabset}
+Column {data-width=400 .tabset}
 -----------------------------------------------------------------------
 
 ### Theory
@@ -217,34 +173,6 @@ Interestingly, all these experiments have been done in a controlled environment,
 
 ```
 
-### Relevant Article Review 1
-
-```{r}
-
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Hypotheses
-
-```{r}
-
-```
-
-There is a positive relationship between self-esteem and uplifting music. 
-
-
-### Statistical findings
-
-```{r}
-
-```
-
-
-Column {data-width=350}
------------------------------------------------------------------------
-
 ### Methods
 
 ```{r}
@@ -260,10 +188,72 @@ The participants were 55 Spotify-users who filled in the “Does music define yo
 The online questionnaire “Does music define your self?” was shared via social media. Those who got the link to the questionnaire and decided to fill it in, had to follow instructions and answer a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist, as their most listened to songs may reveal something about their self-esteem. They proceeded by answering social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Next, they answered the Gold MSI sophistication test and finally the Rosenberg self-esteem questionnaire.
 Aach participant got a musical sophistication index and a self-esteem score, based on their results of the Gold MSI musical sophistication test and the Rosenberg self-esteem questionnaire. Using the Spotify API, we found the values of the audio features of each song in their playlist and calculated the average values for each feature per participant. Finally, we correlated these values and the musical sophistication index to the person’s self-esteem score.
 
-Discussion{data-navmenu="Details"}
+
+Column {data-width=350}
+---------------------------------------------------------
+
+<!-- ### Demographics -->
+
+<!-- ```{r} -->
+
+<!-- genderplot <- ggplot(data = data_df, aes(x = data_df$demographics.age, y = data_df$rse_score, col = data_df$demographics.gender)) + geom_point() + geom_smooth() + xlab('Age') + ylab('RSE Score') + ggtitle('RSE scores per gender') + theme(legend.title = element_blank()) -->
+
+<!-- ggplotly(genderplot) -->
+
+<!-- ``` -->
+
+### MSI correlated with Self-esteem
+
+```{r}
+msiscore <- ggplot(data_df, aes(x = rse_score, y = msi_score, col = demographics.gender)) + 
+  geom_point() +
+  geom_smooth(aes(group = 1)) +
+  labs(color = 'Gender') +
+  xlim(c(0,30)) +
+  ylim(c(20,100)) + 
+  ylab('MSI score ') +
+  xlab('RSE score')
+  
+ggplotly(msiscore)
+
+```
+
+### Number of participants
+```{r}
+
+valueBox(count(data_df), icon = 'fa-pencil')
+
+```
+
+
+<!-- Background{data-navmenu="Details"} -->
+<!-- ======================================================== -->
+
+<!-- Column {.tabset} -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+<!-- ### Relevant Article Review 1 -->
+
+<!-- ```{r} -->
+
+<!-- ``` -->
+
+<!-- Column {data-width=350} -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+
+
+<!-- Column {data-width=350} -->
+<!-- ----------------------------------------------------------------------- -->
+
+
+Discussion
 =========================================================
 
-Column
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Conclusion
@@ -272,7 +262,7 @@ Column
 
 ```
 
-Column {data-width=400}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Limitations
@@ -287,17 +277,17 @@ Column {data-width=400}
 
 ```
 
-Bibliography {data-navmenu="Details"}
-=======================================================================
+Column {data-width=300 .tabset}
+------------------------------------------------------------
 
-### Clickable list of references
+### Clickable bibliography
 
 Elvers, P., Fischinger, T., & Steffens, J. (2018). Music listening as self-enhancement: Effects of empowering music on momentary explicit and implicit self-esteem. Psychology of Music, 46(3), 307-325
 
 Sharma, M., & Jagdev, T. (2011). Use of music therapy for enhancing self-esteem among academically stressed adolescents. Pakistan Journal of Psychological Research, 27(1), pp-53
 
 
-```{r}
+### Article review 1
 
-``` 
+Some useful article review
 
