@@ -51,8 +51,8 @@ fig <- ggplotly( data_df %>% select(valence, energy, mode, dance, rse_score, msi
           + facet_wrap(~ spotify) 
           + xlim(c(0,30)) 
           + ylim(c(0,1)) 
-          + xlab('Spotify score')  
-          + ylab('RSE-scores') )
+          + xlab('RSE-scores')  
+          + ylab('Spotify score' ) )
 fig
 
 ```
