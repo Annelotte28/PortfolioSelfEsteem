@@ -56,7 +56,7 @@ fig <- ggplotly( data_df %>% select(valence_av, energy_av, mode_av, dance_av, rs
                         low = "blue", high = "red") 
           + geom_smooth() 
           + facet_wrap(~ spotify) 
-          + xlim(c(0,30)) 
+          + xlim(c(0,35)) 
           + ylim(c(0,1)) 
           + xlab('RSE-scores')  
           + ylab('Spotify score' ) )
