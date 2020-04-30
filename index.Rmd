@@ -228,7 +228,7 @@ Column {data-width=350}
 ```{r}
 msiscore <- ggplot(data_df, aes(x = rse_score, y = msi_score, col = demographics.gender)) + 
   geom_point() +
-  geom_smooth(aes(group = 1)) +
+  geom_smooth(se = FALSE) +
   labs(color = 'Gender') +
   xlim(c(0,30)) +
   ylim(c(20,100)) + 
