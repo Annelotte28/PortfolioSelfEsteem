@@ -52,7 +52,7 @@ titlenames <- list(
 fig <- ggplotly( data_df %>% select(valence_av, energy_av, mode_av, dance_av, rse_score, msi_score) %>% pivot_longer(c(valence_av, energy_av, mode_av, dance_av), names_to = 'spotify', values_to = 'value') 
           %>% ggplot(aes(x = rse_score, y = value, color = msi_score)) 
           + geom_point() 
-          + scale_color_gradient(name = "MSI-scores", 
+          + scale_color_gradient(name = "MSI", 
                         low = "blue", high = "yellow") 
           + geom_smooth() 
           + facet_wrap(~ spotify) 
@@ -60,6 +60,9 @@ fig <- ggplotly( data_df %>% select(valence_av, energy_av, mode_av, dance_av, rs
           + ylim(c(0,1)) 
           + xlab('RSE-scores')  
           + ylab('Spotify score' ) )
+
+fig$layout$margin$b <- fig$layout$margin$b + 30
+
 fig
 
 ```
@@ -318,24 +321,25 @@ Column {data-width=300 .tabset}
 
 ### Clickable bibliography
 
-Hanser, S. B., & Thompson, L. W. (1994). Effects of a music therapy strategy on depressed older adults. Journal of gerontology, 49(6), 265-269.
+Hanser, S. B., & Thompson, L. W. (1994). [Effects of a music therapy strategy on depressed older adults](https://doi.org/10.1093/geronj/49.6.p265). Journal of gerontology, 49(6), 265-269.
 
-Heimpel, S. A., Wood, J. V., Marshall, M. A., & Brown, J. D. (2002). Do people with low self-esteem really want to feel better? Self-esteem differences in motivation to repair negative moods. Journal of personality and social psychology, 82(1), 128.
+Heimpel, S. A., Wood, J. V., Marshall, M. A., & Brown, J. D. (2002). [Do people with low self-esteem really want to feel better? Self-esteem differences in motivation to repair negative moods](https://doi.org/10.1037/0022-3514.82.1.128). Journal of personality and social psychology, 82(1), 128.
 
-Müllensiefen, D., Gingras, B., Stewart, L., & Musil, J. J. (2013). Goldsmiths Musical Sophistication Index (Gold-MSI) v1. 0: Technical Report and Documentation Revision 0.3. London: Goldsmiths, University of London.
+Müllensiefen, D., Gingras, B., Stewart, L., & Musil, J. J. (2013). [Goldsmiths Musical Sophistication Index (Gold-MSI) v1](https://www.gold.ac.uk/media/documents-by-section/departments/psychology/Gold-MSIv10_Documentation.pdf). 0: Technical Report and Documentation Revision 0.3. London: Goldsmiths, University of London.
 
-Robins, R. W., Hendin, H. M., & Trzesniewski, K. H. (2001). Measuring global self-esteem: Construct validation of a single-item measure and the Rosenberg Self-Esteem Scale. Personality and social psychology bulletin, 27(2), 151-161.
+Robins, R. W., Hendin, H. M., & Trzesniewski, K. H. (2001). [Measuring global self-esteem: Construct validation of a single-item measure and the Rosenberg Self-Esteem Scale](https://doi.org/10.1177/0146167201272002). Personality and social psychology bulletin, 27(2), 151-161.
 
-Rosenberg, M. (2015). Society and the adolescent self-image. Princeton, NJ: Princeton university press. 
+Rosenberg, M. (2015). [Society and the adolescent self-image](https://fetzer.org/sites/default/files/images/stories/pdf/selfmeasures/Self_Measures_for_Self-Esteem_ROSENBERG_SELF-ESTEEM.pdf). Princeton, NJ: Princeton university press. 
 
-Schubert, E. (2007). The influence of emotion, locus of emotion and familiarity upon preference in music. Psychology of Music, 35(3), 499-515.
-Sharma, M., & Jagdev, T. (2011). Use of music therapy for enhancing self-esteem among academically stressed adolescents. Pakistan Journal of Psychological Research, 27(1), 53.
+Schubert, E. (2007). [The influence of emotion, locus of emotion and familiarity upon preference in music](https://doi.org/10.1177/0305735607072657). Psychology of Music, 35(3), 499-515.
 
-Skånland, M. S. (2013). Everyday music listening and affect regulation: The role of MP3 players. International journal of qualitative studies on health and well-being, 8(1), 20595. 
+Sharma, M., & Jagdev, T. (2011). [Use of music therapy for enhancing self-esteem among academically stressed adolescents](http://www.pjprnip.edu.pk/pjpr/index.php/pjpr/article/viewFile/32/24). Pakistan Journal of Psychological Research, 27(1), 53.
 
-Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). Stability of self-esteem across the life span. Journal of personality and social psychology, 84(1), 205.
+Skånland, M. S. (2013). [Everyday music listening and affect regulation: The role of MP3 players](https://doi.org/10.3402/qhw.v8i0.20595). International journal of qualitative studies on health and well-being, 8(1), 20595. 
 
-Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). Self-esteem: a self-social construct. Journal of Consulting and Clinical Psychology, 33(1), 84.
+Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). [Stability of self-esteem across the life span](https://doi.org/10.1037/0022-3514.84.1.205). Journal of personality and social psychology, 84(1), 205.
+
+Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
 
 ### Article review 1
 
