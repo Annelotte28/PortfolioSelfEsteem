@@ -62,6 +62,7 @@ fig <- ggplotly( data_df %>% select(valence_av, energy_av, mode_av, dance_av, rs
           + ylab('Spotify score' ) )
 
 fig$layout$margin$b <- fig$layout$margin$b + 30
+fig$layout$margin$l <- fig$layout$margin$l + 30
 
 fig
 
