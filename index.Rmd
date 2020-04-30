@@ -132,7 +132,7 @@ fig
 ### All correlations
 
 ```{r}
-dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation)
+dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
 corr <- round(cor(dataslice), 1)
 p.mat <- cor_pmat(dataslice)
 corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
@@ -155,6 +155,7 @@ There is a positive relationship between self-esteem and uplifting music.
 **Sub-hypotheses**
 
 There is a positive relationship between self-esteem and: 
+
 * Valence
 * Energy
 * Danceability
