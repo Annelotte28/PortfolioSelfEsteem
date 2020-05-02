@@ -159,13 +159,13 @@ We formulated our hypotheses based on the Spotify API features and defined uplif
 
 As such, our sub-hypotheses is that there is a positive relationship between self-esteem and:
 
-Valence (r = .226, p = .047)
+Valence          ($r = .226$,  $p = .047$)
 
-Energy (r = -.020, p = .443)
+Energy           ($r = -.020$, $p = .443$)
 
-Danceability (r = .049, p = .360)
+Danceability     ($r = .049$,  $p = .360$)
 
-Mode (r = .016, p = .453)
+Mode             ($r = .016$,  $p = .453$)
 
 The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses. The alpha level used was 0.05.
 
