@@ -144,9 +144,6 @@ corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
 corrplotspotify
 ```
 
-Background 
-========================================================
-
 Column {data-width=250}
 -----------------------------------------------------------------------
 
@@ -158,22 +155,27 @@ There is a positive relationship between self-esteem and uplifting music.
 
 **Sub-hypotheses**
 
-There is a positive relationship between self-esteem and: 
+We formulated our hypotheses based on the Spotify API features and defined uplifting music as consisting of a positive valence, high energy, high danceability, and a major mode. 
 
-* Valence
-* Energy
-* Danceability
-* Mode
+As such, our sub-hypotheses is that there is a positive relationship between self-esteem and:
+
+Valence (r = .226, p = .047)
+
+Energy (r = -.020, p = .443)
+
+Danceability (r = .049, p = .360)
+
+Mode (r = .016, p = .453)
+
+The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses. The alpha level used was 0.05.
+
+We also decided to explore the relationship between self-esteem and some other variables, for which we did not have any predictions for the relationship. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, p > .136. The correlation between self-esteem and general musical sophistication was also non-significant, p = .128.
 
 
-### Statistical findings
+Background 
+========================================================
 
-The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses and a two-tailed Pearson’s correlational rest was conducted for the other Spotify API features. The alpha level used was 0.05. 
-
-There was a significant correlation between self-esteem and valence, r = .226, p = 0.047. The correlations between self-esteem and the other features were all non-significant, p > .136. The correlation between self-esteem and general musical sophistication was also non-significant, p = .128.
-
-
-Column {data-width=400 .tabset}
+Column {data-width=600 .tabset}
 -----------------------------------------------------------------------
 
 ### Theory
@@ -214,7 +216,7 @@ The online survey “Does music define your self?” was shared via social media
 Based on the Spotify API features, we used R studio to calculate the average value of each feature for each person’s playlist. The values of these features were then correlated with the self-esteem scores.
 
 
-Column {data-width=350}
+Column {data-width=400}
 ---------------------------------------------------------
 
 <!-- ### Demographics -->
@@ -294,21 +296,22 @@ Column {data-width=350}
 
 There are a few limitations to our research:
 
-**Retrospective aspect**
-
-The playlists are based on the songs someone listened to in 2019, while our research is being conducted in present time of early 2020. It could be that one’s self-esteem has changed since the time they listened to those songs. Even though the stability of one’s self-esteem gradually increases during one’s adolescence and early adulthood, self-esteem still varies across time (Trzesniewski, Donnellan, & Robins, 2003). As such, the instability in one’s self-esteem could decrease the accuracy of our findings as the participants’ self-esteem corresponding to their 2019 playlist could differ from their self-esteem in 2020. 
-
 **Correlation is not causation**
 
-As much as we would like to conduct an experimental research, it is quite a challenge with our limited resources (such as time and a lack of compensation for the participants). Ideally, we would liked to have conducted an experiment using the daily sampling method, whereby participants would be asked to complete a survey everyday regarding their mood, self-esteem and music listened to. However, that would require a lot of commitment from our participants and we lacked the appropriate incentives. As a result, we can only make correlational conclusions. 
+As much as we would like to conduct an experimental research, it is quite a challenge with our limited resources (such as time and a lack of compensation for the participants). Ideally, we would liked to have conducted an experiment using the daily sampling method, whereby participants would be asked to complete a survey everyday regarding their mood, self-esteem and music listened to. However, that would require a lot of commitment from our participants, even if we had the appropriate incentives. As a result, we can only make correlational conclusions.
+
+**Retrospective aspect**
+
+The playlists are based on the songs someone listened to in 2019, while our research is being conducted in present time of early 2020. It is possible that one’s self-esteem has changed since the time they listened to those songs, and thus, potentially decreased the accuracy of our findings between self-esteem and everday music. However, the stability of one’s self-esteem gradually increases during one’s adolescence and early adulthood (Trzesniewski, Donnellan, & Robins, 2003), which is the main age group of our participants. As such, the impact of the instability of one’s self-esteem on our findings should be rather minimal.
 
 **Participant’s state**
 
-Another factor that could have resulted in accurate results is the state of the participants while they were completing the survey. A personal life event may have affected the person’s perception of their self-esteem. For instance, receiving bad grades could have lowered the participant’s belief in their abilities and may have temporarily lowered their self-esteem. A way to avoid this limitation, if we had more resources, would be to conduct the survey a few times, on different days, and take the average scores for the questionnaires.
+Another factor that could have resulted in accurate results is the state of the participants while they were completing the survey. A personal life event may have affected the person’s perception of their self-esteem. For instance, receiving bad grades could have lowered the participant’s belief in their abilities and may have temporarily lowered their self-esteem. However, since we had an substantial number of participants, these differences should average out. As such, we can have some faith in the accuracy of our findings. A way to further minimise this limitation, if we had more resources, would be to conduct the survey a few times, on different days, and take the average scores for the questionnaires. 
 
 **Spotify users only**
 
-Due to the requirements of the course and the ease of collating the data, we targeted people who used Spotify regularly. As such, the data collected is probably not representative of the general population, since there may be some systematic differences between Spotify users and non-Spotify users. 
+Due to the requirements of the course and the ease of collating the data, we targeted people who used Spotify regularly. As such, the data collected is probably not representative of the general population, since there may be some systematic differences between Spotify users and non-Spotify users. However, we can say that it is relatively representative of people who regularly use Spotify. Furthermore, it is appropriate and reasonable to use the Spotify population for this music-based experiment, since Spotify is the next most-used music streaming service, after Apple Music (Watson, 2020).
+
 
 
 ### Future Research
@@ -339,6 +342,8 @@ Sharma, M., & Jagdev, T. (2011). [Use of music therapy for enhancing self-esteem
 Skånland, M. S. (2013). [Everyday music listening and affect regulation: The role of MP3 players](https://doi.org/10.3402/qhw.v8i0.20595). International journal of qualitative studies on health and well-being, 8(1), 20595. 
 
 Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). [Stability of self-esteem across the life span](https://doi.org/10.1037/0022-3514.84.1.205). Journal of personality and social psychology, 84(1), 205.
+
+Watson, A. (2020, March 11). [Most popular music streaming services in the United States in March 2018 and September 2019, by monthly users](https://www.statista.com/statistics/798125/most-popular-us-music-streaming-services-ranked-by-audience/).
 
 Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
 
