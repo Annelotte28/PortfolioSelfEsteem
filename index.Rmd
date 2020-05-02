@@ -144,7 +144,7 @@ corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
 corrplotspotify
 ```
 
-Column {data-width=250}
+Column {data-width=200}
 -----------------------------------------------------------------------
 
 ### Hypotheses
@@ -169,7 +169,7 @@ Mode             ($r = .016$,  $p = .453$)
 
 The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses. The alpha level used was 0.05.
 
-We also decided to explore the relationship between self-esteem and some other variables, for which we did not have any predictions for the relationship. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, p > .136. The correlation between self-esteem and general musical sophistication was also non-significant, p = .128.
+We also decided to explore the relationship between self-esteem and some other variables, for which we did not have any predictions for the relationship. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, $p > .136$. The correlation between self-esteem and general musical sophistication was also non-significant, $p = .128$.
 
 
 Background 
