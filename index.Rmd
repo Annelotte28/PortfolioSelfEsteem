@@ -144,6 +144,8 @@ corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
 corrplotspotify 
 ```
 
+A cross means not significant using a two-tailed test.
+
 Column {data-width=200}
 -----------------------------------------------------------------------
 
