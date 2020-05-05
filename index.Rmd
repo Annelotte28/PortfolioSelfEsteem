@@ -209,11 +209,11 @@ The two questionnaires we used are discussed below:
 
 The Rosenberg Self-Esteem Scale (Rosenberg, 1965) is a reliable measurement of one’s self-esteem (α = 0.88) (Robins, Hendin, & Trzesniewski, 2001). The questionnaire consists of 10 items rated on a four-point Likert scale from one to four. The ratings were: strongly disagree, disagree, agree and strongly agree. The lowest possible score is four and the highest is forty. The higher the score, the higher one’s level of self-esteem. An example of a test item is “I feel I do not have much to be proud of”. 
 
-![Example RSE question](RSE.jpeg?display=inline-block)
+<!-- ![Example RSE question](RSE.jpeg?display=inline-block) -->
 
 The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart, & Musil, 2013) consists of six dimensions. For our research, we opted to use only the General Musical Sophistication subscale which is a reliable (α = 0.93) measurement of one’s musical abilities and achievements. The subscale questionnaire consists of 18 items, rated on a seven-point Likert scale from one to seven. The ratings were: completely disagree, strongly disagree, disagree, neither agree nor disagree, agree, strongly agree, and completely agree. The lowest possible score is 18 and the highest is 126. The higher the score, the higher one’s level of musical sophistication. An example of a test item is “I enjoy writing about music, for example on blogs and forums.”. 
 
-![Example MSI question](MSI.jpeg?display=inline-block)
+<!-- ![Example MSI question](MSI.jpeg?display=inline-block) -->
 
 **Procedures**
 
