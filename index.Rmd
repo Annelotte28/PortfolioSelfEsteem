@@ -312,7 +312,7 @@ It should be considered that everyone has a different taste in music. Compiling 
 Bibliography
 =========================================================
 
-Column { .tabset}
+Column {}
 ------------------------------------------------------------
 
 ### Clickable bibliography
@@ -339,7 +339,10 @@ Watson, A. (2020, March 11). [Most popular music streaming services in the Unite
 
 Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
 
-### Article review 1
+Column {}
+------------------------------------------------------------
+
+### Article review 
 
 This article was chosen as it was in line with the course topic of everyday music listening. More importantly, I thought that it would give me insights into possible research questions for the group component of this course. Since my group has an interest in music, in terms of it being a mood booster, I thought some aspects of mood regulation would be relevant. For instance, the idea that people seek certain music to change or intensify their mood (Skånland, 2013). With regards to the recency of this article, there are more recent articles that discuss mood regulation but not in this specific context of everyday music, using healthy participants. In general, I chose this article based on the utility of the findings more than the methodological approach as a semi-structured interview is not within the scope of possible experimental procedures for this course. There were a few problematic aspects in this research, with regards to generalizability, but I will delve deeper into that later in this paper. Ultimately, this article was chosen for its qualitative insights. The next few paragraphs will provide a summary of the article and following that, I will give my critique and analysis of the article. 
 
