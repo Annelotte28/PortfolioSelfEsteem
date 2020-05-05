@@ -157,19 +157,19 @@ There is a positive relationship between self-esteem and uplifting music.
 
 We formulated our hypotheses based on the Spotify API features and defined uplifting music as consisting of a positive valence, high energy, high danceability, and a major mode. 
 
-As such, our sub-hypotheses is that there is a positive relationship between self-esteem and:
-
-Valence          ($r = .226$,  $p = .047$)
-
-Energy           ($r = -.020$, $p = .443$)
+As such, our sub-hypotheses are that there is a positive relationship between self-esteem and:
 
 Danceability     ($r = .049$,  $p = .360$)
 
+Energy           ($r = -.020$, $p = .443$)
+
 Mode             ($r = .016$,  $p = .453$)
+
+Valence          ($r = .226$,  $p = .047$)
 
 The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses. The alpha level used was 0.05.
 
-We also decided to explore the relationship between self-esteem and some other variables, for which we did not have any predictions for the relationship. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, $p > .136$. The correlation between self-esteem and general musical sophistication was also non-significant, $p = .128$.
+We also decided to explore the relationship between self-esteem and some other variables for which we did not have any prior predictions. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, $p > .136$. The correlation between self-esteem and general musical sophistication was also non-significant, $p = .128$.
 
 
 Background 
@@ -180,11 +180,11 @@ Column {data-width=600 .tabset}
 
 ### Theory
 
-In this modern world, music has become increasingly accessible and individualised (Skånland, 2013), through inventions such as the MP3 and applications like Spotify. Individuals are now able to easily tune in to their desired song or create their own playlists of songs. In comparison to the past where people heavily relied on shared music outlets like the radio. Naturally, one could request for their desired music by calling the radio hotline, but they would have to wait for their queued song, and they would need to have access to a radio. This brings us to the question of how frequent exposure to personalised music could impact individuals. 
+In this modern world, music has become increasingly accessible and individualised (Skånland, 2013), through inventions such as the MP3 Player and applications like Spotify. Individuals are now able to easily tune in to their desired song or create their own playlists of songs. In comparison to the past where people heavily relied on shared music outlets like the radio. Naturally, one could request for their desired music by calling the radio hotline, but they would have to wait for their queued song, and they would need to have access to a radio. This brings us to the question of how frequent exposure to personalised music could impact individuals. 
 
 Based on previous research, we found that music can improve people’s self-esteem. One example is the study by Sharma and Jagdev (2011). The research consisted of 30 students with high academic stress and low self-esteem. They were split into two groups whereby one was selected for music therapy and the other was the control group. The participants’ stress level and self-esteem were measured using the Scale of Academic Stress and the Self Esteem Inventory. The music therapy group was instructed to listen to a 30-minute flute recording of raga, a melodic mode used in Indian classical music, daily for 15 days. The results showed that the music therapy group had higher self-esteem than the control group, which was statistically significant. This supports the idea that music therapy improves self-esteem.
 
-Another research found that people who suffer from mental health issues, such as depression, tend to have low self-esteem and that music therapy was effective in improve improving their self-esteem (Hanser, & Thompson, 1994). All the research we have found with regards to music and self-esteem have been conducted in controlled environments, whereby the researchers determined the songs the participants listened to. We would like to see if the relationship between music therapy and self-esteem could also be extended to everyday music, whereby people have full control over their song selection. As there is currently no research regarding this topic, our research is an exploratory one that could potentially form a basis for future research into everyday music and self-esteem. If there is a correlation between everyday music and self-esteem, further research could be conducted to test if everyday music is a viable, easily accessible alternative to music therapy, for those suffering from low self-esteem. 
+Another research found that people who suffer from mental health issues, such as depression, tend to have low self-esteem and that music therapy was effective in improving their self-esteem (Hanser, & Thompson, 1994). All the research we have found with regards to music and self-esteem have been conducted in controlled environments, whereby the researchers determined the songs the participants listened to. We would like to see if the relationship between music therapy and self-esteem could also be extended to everyday music, whereby people have full control over their song selection. As there is currently no research regarding this topic, our research is exploratory and potentially could form a basis for future research into everyday music and self-esteem. If there is a correlation between everyday music and self-esteem, further research could be conducted to test if everyday music is a viable, easily accessible alternative to music therapy, for those suffering from low self-esteem. 
 
 It could be that one’s self-esteem influences the nature of the music one listens to, through influencing one’s emotional state. According to the study by Heimpel, Wood, Marshall, and Brown (2002), individuals with higher self-esteem are more likely to improve their negative moods. As such, it is plausible that people with high self-esteem experience positive moods more often than people with lower self-esteem. In addition, it was found that people tend to (consciously or unconsciously) choose music that matches their current state mood (Skånland, 2013), and that experiencing positive emotions led to a preference for music with positive valence (Schubert, 2007). As a result, those with high self-esteem may listen to music with positive undertones more often than those with lower self-esteem.
 
@@ -201,14 +201,15 @@ It could be that one’s self-esteem influences the nature of the music one list
 
 **Participants**
 
-The participants were 71 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to a Spotify “Your Top Songs 2019” playlist. The sample was composed of 29 females and 27 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+The participants were 71 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to their Spotify “Your Top Songs 2019” playlist. The sample was composed of 29 females and 27 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
 
 **Materials**
 
 The two questionnaires we used are discussed below:
-The Rosenberg Self-Esteem Scale (Rosenberg, 1965) is a reliable measurement of one’s self-esteem (α = 0.88) (Robins, Hendin, & Trzesniewski, 2001). The questionnaire consists of 10 items, rated on a four-point Likert scale from one to four. The ratings were strongly disagree, disagree, agree and strongly agree. The lowest possible score is four and the highest is 40. The higher the score, the higher one’s level of self-esteem. An example of a test item is “I feel I do not have much to be proud of”. 
 
-The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart, & Musil, 2013) consists of six dimensions. For our research, we opted to use only the General Musical Sophistication subscale which is a reliable (α = 0.93) measurement of one’s musical abilities and achievements. The subscale questionnaire consists of 18 items, rated on a seven-point Likert scale from one to seven. The ratings were completely disagree, strongly disagree, disagree, neither agree nor disagree, agree, strongly agree, and completely agree. The lowest possible score is 18 and the highest is 126. The higher the score, the higher one’s level of musical sophistication. An example of a test item is “I enjoy writing about music, for example on blogs and forums.”. 
+The Rosenberg Self-Esteem Scale (Rosenberg, 1965) is a reliable measurement of one’s self-esteem (α = 0.88) (Robins, Hendin, & Trzesniewski, 2001). The questionnaire consists of 10 items rated on a four-point Likert scale from one to four. The ratings were: strongly disagree, disagree, agree and strongly agree. The lowest possible score is four and the highest is forty. The higher the score, the higher one’s level of self-esteem. An example of a test item is “I feel I do not have much to be proud of”. 
+
+The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart, & Musil, 2013) consists of six dimensions. For our research, we opted to use only the General Musical Sophistication subscale which is a reliable (α = 0.93) measurement of one’s musical abilities and achievements. The subscale questionnaire consists of 18 items, rated on a seven-point Likert scale from one to seven. The ratings were: completely disagree, strongly disagree, disagree, neither agree nor disagree, agree, strongly agree, and completely agree. The lowest possible score is 18 and the highest is 126. The higher the score, the higher one’s level of musical sophistication. An example of a test item is “I enjoy writing about music, for example on blogs and forums.”. 
 
 **Procedures**
 
@@ -298,15 +299,15 @@ There are a few limitations to our research:
 
 **Correlation is not causation**
 
-As much as we would like to conduct an experimental research, it is quite a challenge with our limited resources (such as time and a lack of compensation for the participants). Ideally, we would liked to have conducted an experiment using the daily sampling method, whereby participants would be asked to complete a survey everyday regarding their mood, self-esteem and music listened to. However, that would require a lot of commitment from our participants, even if we had the appropriate incentives. As a result, we can only make correlational conclusions.
+As much as we would have liked to conduct an experimental research, it is quite a challenge with our limited resources (such as time and a lack of compensation for the participants). Ideally, we would liked to have conducted an experiment using the daily sampling method, whereby participants would be asked to complete a survey every day regarding their mood, self-esteem and music listened to. However, that would require a lot of commitment from our participants, even if we had the appropriate incentives. As a result, we can only make correlational conclusions.
 
 **Retrospective aspect**
 
-The playlists are based on the songs someone listened to in 2019, while our research is being conducted in present time of early 2020. It is possible that one’s self-esteem has changed since the time they listened to those songs, and thus, potentially decreased the accuracy of our findings between self-esteem and everday music. However, the stability of one’s self-esteem gradually increases during one’s adolescence and early adulthood (Trzesniewski, Donnellan, & Robins, 2003), which is the main age group of our participants. As such, the impact of the instability of one’s self-esteem on our findings should be rather minimal.
+The playlists are based on the songs someone listened to in 2019, while our research is being conducted in the present time of early 2020. It is possible that one’s self-esteem has changed since the time they listened to those songs, and thus, potentially decreased the accuracy of our findings between self-esteem and everyday music. However, the stability of one’s self-esteem gradually increases during one’s adolescence and early adulthood (Trzesniewski, Donnellan, & Robins, 2003), which is the main age group of our participants. As such, the impact of the instability of one’s self-esteem on our findings should be rather minimal.
 
 **Participant’s state**
 
-Another factor that could have resulted in accurate results is the state of the participants while they were completing the survey. A personal life event may have affected the person’s perception of their self-esteem. For instance, receiving bad grades could have lowered the participant’s belief in their abilities and may have temporarily lowered their self-esteem. However, since we had an substantial number of participants, these differences should average out. As such, we can have some faith in the accuracy of our findings. A way to further minimise this limitation, if we had more resources, would be to conduct the survey a few times, on different days, and take the average scores for the questionnaires. 
+Another factor that could have resulted in inaccurate results is the state of the participants while they were completing the survey. A personal life event may have affected the person’s perception of their self-esteem. For instance, receiving bad grades could have lowered the participant’s belief in their abilities and may have temporarily lowered their self-esteem. However, since we had a substantial number of participants, these differences should average out. As such, we can have some faith in the accuracy of our findings. A way to further minimise this limitation, if we had more resources, would be to conduct the survey a few times, on different days, and take the average scores for the questionnaires. 
 
 **Spotify users only**
 
