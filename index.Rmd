@@ -16,6 +16,8 @@ library(plotly)
 library(DT)
 library(ggcorrplot)
 library(ggthemes)
+library(RColorBrewer)
+library(gridExtra)
 
 theme_set(theme_igray())
 
@@ -291,13 +293,25 @@ ggplotly(msiscore)
 ### Our Sample
 
 ```{r}
-ggplot(data_df, aes(x=Age, fill=demographics.gender, color=demographics.gender)) +
+plot1 <- ggplot(data_df, aes(x=Age, fill=demographics.gender, color=demographics.gender)) +
   geom_histogram(position="identity", bins = 20, alpha = .5) + 
-  labs(x = 'Age', fill = '') + 
+  labs(x = 'Age', y = NULL, fill = NULL) + 
   guides(color = FALSE) + 
   theme_minimal() + 
-  ylab(NULL) +
   theme(legend.position=c(.8,.8))
+
+counts <- count(data_df, 'results.education')
+
+plot2 <- ggplot(counts, aes(x="", y=freq, fill=results.education)) +
+  geom_bar(width = .3, stat = "identity") + 
+  theme_void() + 
+  labs(x = NULL, y = NULL, fill = NULL) +
+  scale_fill_brewer(palette="Pastel1", labels = c("High school", "HAVO/VWO", "MBO", "None", "HBO/WO")) +
+  coord_flip()
+
+lay = rbind(c(1), c(1), c(2))
+
+grid.arrange(plot1, plot2, layout_matrix = lay)
 ```
 
 ### Number of participants
