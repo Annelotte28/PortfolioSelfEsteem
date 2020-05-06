@@ -314,10 +314,6 @@ As uplifting music was defined by having positive valence, high energy, high dan
 
 ```
 
-### Contact details
-
-This research was conducted by Annelotte A. C. Bonenkamp, Lydia Tian, Maifarah L. Anthonijsz, Pauline J. Brandom Bravo Bruinsma, and Pepijn van der Klei as part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
-
 Column {}
 -----------------------------------------------------------------------
 
@@ -363,7 +359,7 @@ These are just a few future research that could be conducted based on our explor
 Bibliography
 =========================================================
 
-Column {}
+Column { .tabset}
 ------------------------------------------------------------
 
 ### Clickable bibliography
@@ -389,6 +385,10 @@ Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). [Stability of sel
 Watson, A. (2020, March 11). [Most popular music streaming services in the United States in March 2018 and September 2019, by monthly users](https://www.statista.com/statistics/798125/most-popular-us-music-streaming-services-ranked-by-audience/).
 
 Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
+
+### Contact details
+
+This research was conducted by Annelotte A. C. Bonenkamp, Lydia Tian, Maifarah L. Anthonijsz, Pauline J. Brandom Bravo Bruinsma, and Pepijn van der Klei as part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
 
 Column {}
 ------------------------------------------------------------
