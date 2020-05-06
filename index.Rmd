@@ -16,6 +16,7 @@ library(plotly)
 library(DT)
 library(ggcorrplot)
 library(ggthemes)
+library(ggstatsplot)
 
 theme_set(theme_igray())
 
@@ -136,12 +137,18 @@ fig
 ### All correlations
 
 ```{r}
+# dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
+# corr <- round(cor(dataslice), 1)
+# p.mat <- cor_pmat(dataslice)
+# corrplotspotify <- ggcorrplot(corr, method = 'circle', sig.level = 0.10, hc.order = TRUE,
+#     type = "lower", p.mat = p.mat, ggtheme = ggthemes::theme_igray(), caption = "The larger the circle, the larger the correlation; 'X' means not significant using a two-tailed test.")
+# corrplotspotify 
+
 dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
 corr <- round(cor(dataslice), 1)
 p.mat <- cor_pmat(dataslice)
-corrplotspotify <- ggcorrplot(corr, method = 'circle', hc.order = TRUE,
-    type = "lower", p.mat = p.mat, ggtheme = ggthemes::theme_igray())
-corrplotspotify 
+corrplotspotify <- ggstatsplot::ggcorrmat(dataslice, sig.level = 0.10, ggtheme = ggthemes::theme_igray(), ggstatsplot.layer = FALSE, matrix.type = "lower")
+corrplotspotify
 ```
 
 Column {data-width=200 .tabset}
@@ -213,7 +220,7 @@ It could be that one’s self-esteem influences the nature of the music one list
 
 **Participants**
 
-The participants were 71 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to their Spotify “Your Top Songs 2019” playlist. The sample was composed of 29 females and 27 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+The participants were 56 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to their Spotify “Your Top Songs 2019” playlist. The sample was composed of 29 females and 27 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
 
 **Materials**
 
