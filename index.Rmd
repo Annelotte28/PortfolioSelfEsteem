@@ -144,7 +144,7 @@ corrplotspotify <- ggcorrplot(corr, hc.order = TRUE,
 corrplotspotify 
 ```
 
-Column {data-width=200}
+Column {data-width=200 .tabset}
 -----------------------------------------------------------------------
 
 ### Hypotheses
@@ -170,6 +170,18 @@ Valence          ($r = .226$,  $p = .047$)
 The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pearson’s correlational test was conducted for the sub-hypotheses. The alpha level used was 0.05.
 
 We also decided to explore the relationship between self-esteem and some other variables for which we did not have any prior predictions. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, $p > .136$. The correlation between self-esteem and general musical sophistication was also non-significant, $p = .128$.
+
+### Spotify features
+
+*Dance* – Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+
+*Energy* – Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
+
+*Mode* – Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.
+
+*Valence* – A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+
+You can find out more about the different audio features on Spotify by going to this [link](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/).
 
 
 Background 
@@ -220,6 +232,30 @@ The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart
 The online survey “Does music define your self?” was shared via social media. Those who filled in the survey received instructions and answered a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist. They then answered social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Following that, they answered the Gold MSI test and finally the Rosenberg self-esteem questionnaire. This is the [link](https://pepijn.shinyapps.io/survey/) to our survey.
 Based on the Spotify API features, we used R studio to calculate the average value of each feature for each person’s playlist. The values of these features were then correlated with the self-esteem scores.
 
+### Motivation
+
+Our group started out with an interest in everyday music as a mood booster. Through some personal reflections on our experience with music, we found a common, testable construct that has been ever-present in our interaction with music and mood - self-esteem. Self-esteem is an individual’s evaluation of their worth (Ziller, Hagey, Smith, & Long, 1969). With this in mind, we formulated our research. These are snippets of our personal motivation to conduct this research:
+
+**Annelotte**
+
+Whenever I am feeling low or down, I put on a Beyonce song and get totally lost in the music. Then it doesn’t matter anymore where I am or what I was doing, I just focus on the beats and lyrics. This always makes me forget all about why I was feeling low and gets me in the mood where I can take on the world again. That is what music is to me: helping me in my low times, but also giving a helping hand to be able to celebrate the good times even better. This made me wonder if more people listen to music to boost their confidence like I do. 
+
+**Lyana**
+
+Music and self-esteem is an extremely personal topic, as I too have suffered from extremely low self-esteem. During that time, music was the only thing that truly helped me. If with this research, we could somehow contribute to an accessible solution to help those suffering from mental health and self-esteem issues, then hopefully we could help someone who is going through a painful and dark situation.
+
+**Lydia**
+
+Music has been a constant source of support in my life. Through the loneliness and struggles I've faced, music gave me the strength to push on. It invigorates me when I'm feeling low and allows me to wallow in my sorrow if I wish to. Music gives me comfort and confidence. For instance, when I'm walking in public without music, I feel awkward and anxious but when listening to music, I'm content and walk with confidence. As such, I was curious as to whether there’s an interactive relationship between one’s self-esteem and choice of music.
+
+**Pauline**
+
+Since I study Medicine, I am being compared to the rest of the students constantly, which results in me having low self-esteem at those times. My ultimate remedy to these times is listening to my own compiled ‘happy’ playlist. This always brings me into a happier mood. I listen to music every day, for as long as I can to keep me in my best mood. I can conclude that it made me a better person. 
+
+**Pepijn**
+
+I find it fascinating that when I’m happy I tend to listen to a happy house beats that reminds me of summer, that when I’m down I put on an Ed Sheeran song about a prostitute that’s addicted to crack, and that Eminem is the one that’s fits the place when I feel like I can fight anyone. Music, at least for me, seems to reflect a state of mind, but what are the effects of reflecting this state of mind? Would it reinforce this state of mind? Would it reverse it? I find these emotional effects of music listening particularly interesting, and in the case of self-esteem these effects can be of good use, when used tactically.
+
 
 Column {data-width=400}
 ---------------------------------------------------------
@@ -268,9 +304,10 @@ Column {}
 ### Conclusion
 
 It has been found in multiple scientific articles that music therapy improves self-esteem. These experiments were all conducted in a controlled environment where participants could not choose what they listened to. Therefore, this exploratory research was conducted to see whether personalised everyday music has the same relationship with self-esteem as music therapy does. We hypothesized that there would be a positive correlation between self-esteem and the following Spotify features: valence, energy, danceability and mode. To test these hypotheses, a one-tailed correlation test was used.
-Based on the results, we can conclude that valence does indeed have positive correlation with self-esteem, as it has a significant relationship, $p = 0.047$. Although, this is only a small to medium sized correlation,  $r = 0.226$. Contrary to our sub-hypotheses, there is no significant correlation between self-esteem and energy, danceability and mode, $r < 0.016$, $p = 0.443$, $0.360$, $0.453$. The same can be said for the other Spotify features, $p > 0.136$, and the general music sophistication, $p = 0.128$, where two-tailed tests were conducted instead.
+Based on the results, we can conclude that valence does indeed have positive  correlation with self-esteem, as it has a significant relationship, $p = 0.047$. Although, this is only a small to medium sized correlation,  $r = 0.226$. Contrary to our sub-hypotheses, there is no significant correlation between self-esteem and energy, danceability and mode, $r < 0.016$, $p = 0.443$, $0.360$, $0.453$. The same can be said for the other Spotify features, $p > 0.136$, and the general music sophistication, $p = 0.128$, where two-tailed tests were conducted instead.
 
-As uplifting music was defined by having positive valence, high energy, high danceability, and a major mode, no clear conclusion can be made regarding the correlation between this type of music and self-esteem. It may be that there is no positive relation between the two, contrary to our initial hypothesis, as there is not enough data to prove this. It could also be possible that the assumptions we made for uplifting music were incorrect or incomplete, as other audio features may define uplifting music better. Lastly, other features of the music, such as the message the songs are trying to convey or the metaphorical use of lyrics, were not analysed in this research which may also influence self-esteem.
+As uplifting music was defined by having positive valence, high energy, high danceability, and a major mode, no clear conclusion can be made regarding the correlation between uplifting music and self-esteem. It may be that there is no positive relation between the two, contrary to our initial hypothesis. It could also be possible that the assumptions we made for uplifting music was incorrect or incomplete, as other audio features may define uplifting music better. Lastly, other features of the music, such as the message the songs are trying to convey and the use of lyrics, were not analysed in this research which may also influence self-esteem.
+
 
 
 ```{r}
@@ -342,6 +379,10 @@ Trzesniewski, K. H., Donnellan, M. B., & Robins, R. W. (2003). [Stability of sel
 Watson, A. (2020, March 11). [Most popular music streaming services in the United States in March 2018 and September 2019, by monthly users](https://www.statista.com/statistics/798125/most-popular-us-music-streaming-services-ranked-by-audience/).
 
 Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
+
+### Contact details
+
+
 
 Column {}
 ------------------------------------------------------------
