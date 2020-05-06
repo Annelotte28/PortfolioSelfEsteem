@@ -137,18 +137,18 @@ fig
 ### All correlations
 
 ```{r}
-# dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
-# corr <- round(cor(dataslice), 1)
-# p.mat <- cor_pmat(dataslice)
-# corrplotspotify <- ggcorrplot(corr, method = 'circle', sig.level = 0.10, hc.order = TRUE,
-#     type = "lower", p.mat = p.mat, ggtheme = ggthemes::theme_igray(), caption = "The larger the circle, the larger the correlation; 'X' means not significant using a two-tailed test.")
-# corrplotspotify 
-
 dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
 corr <- round(cor(dataslice), 1)
 p.mat <- cor_pmat(dataslice)
-corrplotspotify <- ggstatsplot::ggcorrmat(dataslice, sig.level = 0.10, ggtheme = ggthemes::theme_igray(), ggstatsplot.layer = FALSE, matrix.type = "lower")
-corrplotspotify
+corrplotspotify <- ggcorrplot(corr, method = 'circle', sig.level = 0.10, hc.order = TRUE,
+     type = "lower", p.mat = p.mat, ggtheme = ggthemes::theme_igray())
+corrplotspotify + labs(caption = 'The larger the circle, the larger the correlation. "X" means insignificant using a two-tailed test.')
+
+# dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
+# corr <- round(cor(dataslice), 1)
+# p.mat <- cor_pmat(dataslice)
+# corrplotspotify <- ggstatsplot::ggcorrmat(dataslice, sig.level = 0.10, ggtheme = ggthemes::theme_igray(), ggstatsplot.layer = FALSE, matrix.type = "lower")
+# corrplotspotify
 ```
 
 Column {data-width=200 .tabset}
