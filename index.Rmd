@@ -271,7 +271,7 @@ Column {data-width=400}
 
 <!-- ``` -->
 
-### MSI correlated with Self-esteem
+<!--### MSI correlated with Self-esteem
 
 ```{r}
 msiscore <- ggplot(data_df, aes(x = RSE_score, y = MSI_score, col = demographics.gender)) + 
@@ -285,6 +285,18 @@ msiscore <- ggplot(data_df, aes(x = RSE_score, y = MSI_score, col = demographics
   
 ggplotly(msiscore)
 
+```
+-->
+
+### Our Sample
+
+```{r}
+demo <- ggplot(data_df, aes(x=Age, fill=demographics.gender, color=demographics.gender)) +
+  geom_histogram(position="identity", bins = 20) + 
+  labs(x = 'Age', fill = element_blank()) + 
+  guides(color = FALSE) + theme_minimal() + 
+  ylab(NULL)
+ggplotly(demo)
 ```
 
 ### Number of participants
