@@ -178,7 +178,8 @@ piechart <- ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) 
   coord_polar(theta="y") +
   xlim(c(-1, 5)) +
   theme_void() +
-  theme(legend.position = "none")
+  theme(legend.position = "none") +
+  labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?')
 
 piechart
 ```
