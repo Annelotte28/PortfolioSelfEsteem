@@ -260,7 +260,7 @@ Since I study Medicine, I am being compared to the rest of the students constant
 I find it fascinating that when I’m happy I tend to listen to a happy house beats that reminds me of summer, that when I’m down I put on an Ed Sheeran song about a prostitute that’s addicted to crack, and that Eminem is the one that’s fits the place when I feel like I can fight anyone. Music, at least for me, seems to reflect a state of mind, but what are the effects of reflecting this state of mind? Would it reinforce this state of mind? Would it reverse it? I find these emotional effects of music listening particularly interesting, and in the case of self-esteem these effects can be of good use, when used tactically.
 
 
-Column {data-width=400}
+Column {data-width=400 .tabset}
 ---------------------------------------------------------
 
 <!-- ### Demographics -->
@@ -272,23 +272,6 @@ Column {data-width=400}
 <!-- ggplotly(genderplot) -->
 
 <!-- ``` -->
-
-<!--### MSI correlated with Self-esteem
-
-```{r}
-msiscore <- ggplot(data_df, aes(x = RSE_score, y = MSI_score, col = demographics.gender)) + 
-  geom_point() +
-  geom_smooth(se = FALSE) +
-  labs(color = 'Gender') +
-  xlim(c(0,30)) +
-  ylim(c(20,100)) + 
-  ylab('MSI score ') +
-  xlab('RSE score')
-  
-ggplotly(msiscore)
-
-```
--->
 
 ### Our Sample
 
@@ -314,14 +297,21 @@ lay = rbind(c(1), c(1), c(2))
 grid.arrange(plot1, plot2, layout_matrix = lay)
 ```
 
-### Number of participants
+### MSI correlated with Self-esteem
 
 ```{r}
-
-valueBox(56,icon='fa-pencil')
+msiscore <- ggplot(data_df, aes(x = RSE_score, y = MSI_score, col = demographics.gender)) + 
+  geom_point() +
+  geom_smooth(se = FALSE) +
+  labs(color = 'Gender') +
+  xlim(c(0,30)) +
+  ylim(c(20,100)) + 
+  ylab('MSI score ') +
+  xlab('RSE score')
+  
+ggplotly(msiscore)
 
 ```
-
 
 Discussion
 =========================================================
@@ -340,6 +330,15 @@ As uplifting music was defined by having positive valence, high energy, high dan
 ```{r}
 
 ```
+
+### Number of participants
+
+```{r}
+
+valueBox(56,icon='fa-pencil')
+
+```
+
 
 Column {}
 -----------------------------------------------------------------------
