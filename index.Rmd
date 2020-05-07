@@ -464,10 +464,15 @@ Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-
 ### Researchers' Info
 
 This research was conducted by:
+
 * Annelotte A. C. Bonenkamp
+
 * Lydia Tian
+
 * Maifarah L. Anthonijsz
+
 * Pauline J. Brandom Bravo Bruinsma
+
 * Pepijn van der Klei  
 
 This portfolio is part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
