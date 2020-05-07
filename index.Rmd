@@ -173,10 +173,10 @@ data1$label <- data1$Type
 # Make the plot
 piechart <- ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
   geom_rect() +
-  geom_text( x=5, aes(y=labelPosition, label=label), size=4) +
+  geom_text( x=6, aes(y=labelPosition, label=label), size=4) +
   scale_fill_brewer(palette='Set3') +
   coord_polar(theta="y") +
-  xlim(c(-1, 5)) +
+  xlim(c(-1, 6)) +
   theme_void() +
   theme(legend.position = "none") +
   labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?')
