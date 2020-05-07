@@ -147,6 +147,43 @@ corrplotspotify +  labs(caption = 'Larger circle means larger correlation. "X" :
 
 ```
 
+### The participants view
+```{r}
+data1 <- read_csv('genre_freq.csv') 
+
+data1 <- data1 %>%
+          filter(Freq > 2) %>%
+             arrange(desc(Freq))
+
+# Compute percentages
+data1$fraction <- data1$Freq / sum(data1$Freq)
+
+# Compute the cumulative percentages (top of each rectangle)
+data1$ymax <- cumsum(data1$fraction)
+
+# Compute the bottom of each rectangle
+data1$ymin <- c(0, head(data1$ymax, n=-1))
+
+# Compute label position
+data1$labelPosition <- (data1$ymax + data1$ymin) / 2
+
+# Compute a good label
+data1$label <- data1$Type
+
+# Make the plot
+ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
+  geom_rect() +
+  geom_text( x=5, aes(y=labelPosition, label=label), size=4) +
+  scale_fill_brewer(palette='Set3') +
+  coord_polar(theta="y") +
+  xlim(c(-1, 5)) +
+  theme_void() +
+  theme(legend.position = "none")
+```
+<div>
+We also left the participants with an open question to give their view on the relation between music and self esteem: '*Do you feel like music influences your self esteem? If yes, what kind of music?*'. All kinds of music were stated, while only few said that they did not think there was a causal relation. Above are the genres that were said to have a positive influence visualized, with only the genres stated that had more than two mentions. There were many more kinds of music named, including Instrumentel, Indie-pop, K-pop, Rock, Classic, Energetic, Hyped, Familiar (as in music you're familiar with), Electronic and tunes that have a relatable context. Kinds of music that did not stimulate, but rather violate your self-esteem, were sad songs, songs about loneliness and tunes by Bon Jovi: 'ABBA of Panic at the disco op vol volume knalt t echt even omhoog, terwijl liedjes als living on a prayer voor mij persoonlijk echt mn dag kunnen verpesten'. 
+</div>
+
 Column {data-width=200 .tabset}
 -----------------------------------------------------------------------
 
