@@ -475,7 +475,7 @@ This research was conducted by:
 
 * Pepijn van der Klei  
 
-This portfolio is part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
+This portfolio is part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, supervised by Dr. John Ashley Burgoyne. 
 
 Column {}
 ------------------------------------------------------------
