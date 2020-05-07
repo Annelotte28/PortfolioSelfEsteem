@@ -232,7 +232,7 @@ The Goldsmith Musical Sophistication Index v1.0 (Müllensiefen, Gingras, Stewart
 
 **Procedures**
 
-The online survey “Does music define your self?” was shared via social media. Those who filled in the survey received instructions and answered a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist. They then answered social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Following that, they answered the Gold MSI test and finally the Rosenberg self-esteem questionnaire. This is the [link](https://pepijn.shinyapps.io/survey/) to our survey.
+The online survey “Does music define your self?” was shared via social media. Those who filled in the survey received instructions and answered a series of questions shown on their screens. First, the participants had to paste the link to their “Your Top Songs 2019” Spotify playlist. They then answered social demographic questions regarding their gender, age, occupational status and highest achieved educational level. Following that, they answered the Gold MSI test and finally the Rosenberg self-esteem questionnaire. Finally, they could state if they thought music influences their self-esteem and indicate whether they understood the questions. None of the participants did not understand more than two questions. This is the [link](https://pepijn.shinyapps.io/survey/) to our survey.
 Based on the Spotify API features, we used R studio to calculate the average value of each feature for each person’s playlist. The values of these features were then correlated with the self-esteem scores.
 
 ### Motivation
