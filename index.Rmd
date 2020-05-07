@@ -29,7 +29,7 @@ names(data_df) <- new_names
 
 ```
 
-Spotify results
+Results
 ======================================================
 
 Abstract {.sidebar}
@@ -46,7 +46,7 @@ In this study, we measured if there was a relationship between self-esteem and e
 Big visualization{.tabset}
 --------------------------------------------------------
 
-### Spotify features
+### Spotify Features
 ```{r}
 
 fig <- ggplotly(data_df 
@@ -135,7 +135,7 @@ fig
 
 <!-- ``` -->
 
-### All correlations
+### All Correlations
 
 ```{r}
 dataslice = select(data_df, -X, -results.education, -demographics.gender, -demographics.occupation, -mode_sd, -liveness_sd, -dance_sd, acousticness_sd, -energy_sd, -instrumentalness_sd, -loudness_sd, -valence_sd, -speechiness_sd, -acousticness_sd, -tempo_sd)
@@ -147,7 +147,7 @@ corrplotspotify +  labs(caption = 'Larger circle means larger correlation. "X" :
 
 ```
 
-### The participants view
+### The Participants' View
 ```{r}
 data1 <- read_csv('genre_freq.csv') 
 
@@ -213,7 +213,7 @@ The statistical tests were done using the IBM SPSS 25 software. A one-tailed Pea
 
 We also decided to explore the relationship between self-esteem and some other variables for which we did not have any prior predictions. We used two-tailed Pearson's correlational test for these variables. The correlations between self-esteem and the other features were all non-significant, $p > .136$. The correlation between self-esteem and general musical sophistication was also non-significant, $p = .128$.
 
-### Spotify features
+### Spotify Features
 
 *Dance* – Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
 
@@ -370,7 +370,7 @@ As uplifting music was defined by having positive valence, high energy, high dan
 
 ```
 
-### Number of participants
+### Number of Participants
 
 ```{r}
 
@@ -427,7 +427,7 @@ Bibliography
 Column { .tabset}
 ------------------------------------------------------------
 
-### Clickable bibliography
+### Clickable Bibliography
 
 Hanser, S. B., & Thompson, L. W. (1994). [Effects of a music therapy strategy on depressed older adults](https://doi.org/10.1093/geronj/49.6.p265). Journal of gerontology, 49(6), 265-269.
 
@@ -451,14 +451,14 @@ Watson, A. (2020, March 11). [Most popular music streaming services in the Unite
 
 Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-social construct](https://doi.org/10.1037/h0027374). Journal of Consulting and Clinical Psychology, 33(1), 84.
 
-### Researchers info
+### Researchers' Info
 
 This research was conducted by Annelotte A. C. Bonenkamp, Lydia Tian, Maifarah L. Anthonijsz, Pauline J. Brandom Bravo Bruinsma, and Pepijn van der Klei as part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
 
 Column {}
 ------------------------------------------------------------
 
-### Article review 
+### Article Review 
 
 The article “Everyday music listening and affect regulation: The role of MP3 players” (Skånland, 2013) was a qualitative research that aimed to investigate the influence of listening to music, on an MP3, on a person’s emotional regulation. The importance of emotional regulation was justified by its relation to one’s well being and overall quality of life. A poor regulation of emotion was linked to mental health disorders such as depression, which has linked to a decrease in the quality of one’s life and wellbeing. 
 This study focused on music as a potential tool for emotional regulation. In this study, there were twelve participants, six males and six females, aged 18 to 44. They were all Norwegian, relatively wealthy and assumed to have a relatively high level of education. The participants were instructed to use their MP3 players regularly, listening to their own songs. Thereafter, the researcher conducted qualitative semi-structured interviews, lasting about an hour a person. From the data gathered, the researcher formed three categories which were the use of MP3, self-regulation, and coping, but focused mostly on self-regulation.
