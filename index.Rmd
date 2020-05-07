@@ -226,7 +226,7 @@ We also decided to explore the relationship between self-esteem and some other v
 You can find out more about the different audio features on Spotify by going to this [link](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/).
 
 
-Background 
+Research Background 
 ========================================================
 
 Column {data-width=600 .tabset}
@@ -352,7 +352,7 @@ ggplotly(msiscore)
 
 ```
 
-Discussion
+Evaluation
 =========================================================
 
 Column {}
