@@ -171,7 +171,7 @@ data1$labelPosition <- (data1$ymax + data1$ymin) / 2
 data1$label <- data1$Type
 
 # Make the plot
-ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
+piechart <- ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
   geom_rect() +
   geom_text( x=5, aes(y=labelPosition, label=label), size=4) +
   scale_fill_brewer(palette='Set3') +
@@ -179,6 +179,8 @@ ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
   xlim(c(-1, 5)) +
   theme_void() +
   theme(legend.position = "none")
+
+piechart
 ```
 <div>
 We also left the participants with an open question to give their view on the relation between music and self esteem: '*Do you feel like music influences your self esteem? If yes, what kind of music?*'. All kinds of music were stated, while only few said that they did not think there was a causal relation. Above are the genres that were said to have a positive influence visualized, with only the genres stated that had more than two mentions. There were many more kinds of music named, including Instrumental, Indie-pop, K-pop, Rock, Classic, Energetic, Hyped, Familiar (as in music you're familiar with), Electronic and tunes that have a relatable context. Kinds of music that did not stimulate, but rather violate your self-esteem, were sad songs, songs about loneliness and tunes by Bon Jovi:
@@ -429,7 +431,7 @@ These are just a few future research that could be conducted based on our explor
 ```
 
 
-Bibliography
+References
 =========================================================
 
 Column { .tabset}
@@ -461,7 +463,14 @@ Ziller, R. C., Hagey, J., Smith, M., & Long, B. H. (1969). [Self-esteem: a self-
 
 ### Researchers' Info
 
-This research was conducted by Annelotte A. C. Bonenkamp, Lydia Tian, Maifarah L. Anthonijsz, Pauline J. Brandom Bravo Bruinsma, and Pepijn van der Klei as part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
+This research was conducted by:
+* Annelotte A. C. Bonenkamp
+* Lydia Tian
+* Maifarah L. Anthonijsz
+* Pauline J. Brandom Bravo Bruinsma
+* Pepijn van der Klei  
+
+This portfolio is part of the honours course “The Data Science of Everyday Music Listening” at the University of Amsterdam, conducted by Dr. John Ashley Burgoyne. 
 
 Column {}
 ------------------------------------------------------------
