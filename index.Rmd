@@ -181,9 +181,13 @@ ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
   theme(legend.position = "none")
 ```
 <div>
-We also left the participants with an open question to give their view on the relation between music and self esteem: '*Do you feel like music influences your self esteem? If yes, what kind of music?*'. All kinds of music were stated, while only few said that they did not think there was a causal relation. Above are the genres that were said to have a positive influence visualized, with only the genres stated that had more than two mentions. There were many more kinds of music named, including Instrumental, Indie-pop, K-pop, Rock, Classic, Energetic, Hyped, Familiar (as in music you're familiar with), Electronic and tunes that have a relatable context. Kinds of music that did not stimulate, but rather violate your self-esteem, were sad songs, songs about loneliness and tunes by Bon Jovi: 
+We also left the participants with an open question to give their view on the relation between music and self esteem: '*Do you feel like music influences your self esteem? If yes, what kind of music?*'. All kinds of music were stated, while only few said that they did not think there was a causal relation. Above are the genres that were said to have a positive influence visualized, with only the genres stated that had more than two mentions. There were many more kinds of music named, including Instrumental, Indie-pop, K-pop, Rock, Classic, Energetic, Hyped, Familiar (as in music you're familiar with), Electronic and tunes that have a relatable context. Kinds of music that did not stimulate, but rather violate your self-esteem, were sad songs, songs about loneliness and tunes by Bon Jovi:
 
-"*ABBA of Panic at the disco op vol volume knalt t echt even omhoog, terwijl liedjes als living on a prayer voor mij persoonlijk echt mn dag kunnen verpesten.*"
+"*ABBA of Panic At The Disco op vol volume knalt t echt even omhoog, terwijl liedjes als Living On A Prayer voor mij persoonlijk echt mn dag kunnen verpesten. - [With songs like] ABBA or Panic At The Disco, it [self esteem] really sky rockets, while songs like Living On A Prayer can really ruin my day.*"
+
+"*I tend to feel more confident when listening to dance-pop, bubblegum bass & techno. However, if it contains any sad lyrics it impacts my self-esteem negatively.*"
+
+"*I do believe it influences my self esteem. It lifts my spirit, brings things into perspective etc. All of the songs I listen to do so in one way or another.*"
 </div>
 
 Column {data-width=200 .tabset}
@@ -256,6 +260,8 @@ It could be that one’s self-esteem influences the nature of the music one list
 **Participants**
 
 The participants were 56 Spotify-users who filled in the “Does music define your self?” questionnaire. An additional 15 people filled in the questionnaire but were excluded from the final sample because of not submitting a link to their Spotify “Your Top Songs 2019” playlist. The sample was composed of 29 females and 27 males with a mean age of 21 years, ranging between 15 and 31. Most participants are currently in university. The highest educational level the participants finished varied.
+
+On the right you can see the demographics of our participants in the first tab. In the second tab, you can see how the relation between the self-esteem and musical sophistication differed for the female and male participants.
 
 **Materials**
 
@@ -360,8 +366,10 @@ Column {}
 
 ### Conclusion
 
-It has been found in multiple scientific articles that music therapy improves self-esteem. These experiments were all conducted in a controlled environment where participants could not choose what they listened to. Therefore, this exploratory research was conducted to see whether personalised everyday music has the same relationship with self-esteem as music therapy does. We hypothesized that there would be a positive correlation between self-esteem and the following Spotify features: valence, energy, danceability and mode. To test these hypotheses, a one-tailed correlation test was used.
-Based on the results, we can conclude that valence does indeed have positive  correlation with self-esteem, as it has a significant relationship, $p = 0.047$. Although, this is only a small to medium sized correlation,  $r = 0.226$. Contrary to our sub-hypotheses, there is no significant correlation between self-esteem and energy, danceability and mode, $r < 0.016$, $p = 0.443$, $0.360$, $0.453$. The same can be said for the other Spotify features, $p > 0.136$, and the general music sophistication, $p = 0.128$, where two-tailed tests were conducted instead.
+It has been found in multiple scientific articles that music therapy improves self-esteem. These experiments were all conducted in a controlled environment where participants could not choose what they listened to. Therefore, this exploratory research was conducted to see whether personalised everyday music has the same relationship with self-esteem as music therapy does. 
+
+We hypothesized that there would be a positive correlation between self-esteem and the following Spotify features: valence, energy, danceability and mode. To test these hypotheses, a one-tailed correlation test was used.
+Based on the results, we can conclude that valence does indeed have positive  correlation with self-esteem, as it has a significant relationship, $p = 0.047$. Although, this is only a small to medium sized correlation,  $r = 0.226$. Contrary to our sub-hypotheses, there is no significant correlation between self-esteem and energy, danceability and mode, $r < 0.016$, $p = 0.443$, $0.360$, $0.453$. The same can be said for the other Spotify features, $p > 0.136$, and the general music sophistication, $p = 0.128$, where two-tailed tests were conducted instead. An interesting finding was that a majority of the participants believed that music influenced their self-esteem, and cited a few music genres that improved their confidence. 
 
 As uplifting music was defined by having positive valence, high energy, high danceability, and a major mode, no clear conclusion can be made regarding the correlation between uplifting music and self-esteem. It may be that there is no positive relation between the two, contrary to our initial hypothesis. It could also be possible that the assumptions we made for uplifting music was incorrect or incomplete, as other audio features may define uplifting music better. Lastly, other features of the music, such as the message the songs are trying to convey and the use of lyrics, were not analysed in this research which may also influence self-esteem.
 
