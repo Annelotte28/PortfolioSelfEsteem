@@ -171,17 +171,21 @@ data1$labelPosition <- (data1$ymax + data1$ymin) / 2
 data1$label <- data1$Type
 
 # Make the plot
-piechart <- ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
-  geom_rect() +
-  geom_text( x=6, aes(y=labelPosition, label=label), size=4) +
-  scale_fill_brewer(palette='Set3') +
-  coord_polar(theta="y") +
-  xlim(c(-1, 6)) +
-  theme_void() +
-  theme(legend.position = "none") +
-  labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?')
+# piechart <- ggplot(data1, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=Type)) +
+#   geom_rect() +
+#   geom_text( x=6, aes(y=labelPosition, label=label), size=4) +
+#   scale_fill_brewer(palette='Set3') +
+#   coord_polar(theta="y") +
+#   xlim(c(-1, 6)) +
+#   theme_void() +
+#   theme(legend.position = "none") +
+#   labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?')
+# 
+# piechart
 
-piechart
+barplot <- data1 %>% ggplot(aes(x = Type, y = Freq)) + geom_bar(stat = "identity", col = 'darkturquoise', fill = 'darkturquoise') + labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?', x = "\nType of music", y = "Frequency\n") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+barplot
+
 ```
 <div>
 We also left the participants with an open question to give their view on the relation between music and self esteem: ‘*Do you feel like music influences your self esteem? If yes, what kind of music?*’. All kinds of music were stated. However, a few said they did not think there was a causal relation. Above are the genres that were said to have a positive influence visualized - we only used genres that had more than two mentions. There were many more kinds of music named, including Instrumental, Indie-pop, K-pop, Rock, Classic, Energetic, Hyped, Familiar (as in music you’re familiar with), Electronic and tunes that have a relatable context. The types of music that did not stimulate, but rather violated some participants’ self-esteem, were sad songs, songs about loneliness and tunes by Bon Jovi:
