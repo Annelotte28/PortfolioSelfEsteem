@@ -148,7 +148,7 @@ corrplotspotify +  labs(caption = 'Larger circle means larger correlation. "X" :
 ```
 
 ### The Participants' View
-```{r}
+```{r, fig.align = 'center'}
 data1 <- read_csv('genre_freq.csv') 
 
 data1 <- data1 %>%
