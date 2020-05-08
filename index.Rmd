@@ -183,7 +183,8 @@ data1$label <- data1$Type
 # 
 # piechart
 
-barplot <- data1 %>% ggplot(aes(x = Type, y = Freq)) + geom_bar(stat = "identity", col = 'darkturquoise', fill = 'darkturquoise') + labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?', x = "\nType of music", y = "Frequency\n") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+barplot <- data1 %>% ggplot(aes(x = Type, y = Freq)) + geom_bar(stat = "identity", col = 'darkturquoise', fill = 'darkturquoise') + labs(title = 'Do you feel like music influences your self esteem?', subtitle = 'If yes, what kind of music?', x = "\nType of music", y = "Frequency\n") + theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) + theme(plot.title = element_text(hjust = 0.5)) + theme(plot.subtitle = element_text(hjust = 0.5))
+
 barplot
 
 ```
